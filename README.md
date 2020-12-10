@@ -5,7 +5,7 @@ UC3 staff use MySql, Java, and Ruby, so the sample docker files will use these t
 
 ## Pre Work: Install Docker
 _Please complete the following before the first session.  Reach out for help if the installation steps do not work for you._
-- [Windows 10 Setup](Windows10.md)
+- [Windows 10 Setup](Windows10)
 
 ## Session 1: Docker Images and Containers
 Execute code using the docker command.  Use docker command line ags.
