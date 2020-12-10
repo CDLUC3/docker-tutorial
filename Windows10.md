@@ -1,4 +1,6 @@
-## Windows 10 setup for Docker 
+{% include nav.html %}
+
+# Windows 10 setup for Docker 
 
 ### Install Docker Desktop
 
