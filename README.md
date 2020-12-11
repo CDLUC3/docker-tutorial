@@ -1,11 +1,12 @@
 # Docker Tutorial for UC3 Developers
-This will consist of 3 90 minute sessions covering various topics in the use of Docker.
+This will consist of three 90 minute sessions covering various topics in the use of Docker.  The sessions will start in late Jan 2021.
 
 UC3 staff use MySql, Java, and Ruby, so the sample docker files will use these technologies.
 
-## Pre Work: Install Docker
+## Pre Work: Install docker and docker-compose
 _Please complete the following before the first session.  Reach out for help if the installation steps do not work for you._
-- [Windows 10 Setup](Windows10)
+- [Windows 10 Setup](Windows10.md)
+- [MacOS Setup](MacOS.md)
 
 ## Session 1: Docker Images and Containers
 Execute code using the docker command.  Use docker command line ags.
@@ -44,3 +45,6 @@ Execute code using the docker command.  Use docker command line ags.
   - DockerHub
   - Amazon ECR
   - GitHub ??Containers
+  
+## Notes
+_This site reuses content from https://dspace-labs.github.io/DSpace-Docker-Images/documentation/workshop/info.html_
