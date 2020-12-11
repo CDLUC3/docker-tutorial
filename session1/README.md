@@ -2,6 +2,9 @@
 
 # Session 1
 
+- [Run Simple Linux Commands](simple.linux.commands.md)
+- [Run MySql](run.mysql.md)
+
 - Run mysql
   - Connect to mysql container from local mysql cli (if available)
   - Use docker exec to run mysql
