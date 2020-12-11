@@ -2,7 +2,7 @@
 
 # Session 2
 
-- Migrate stack to docker-compose
+- [Migrate stack to docker-compose](migrate.stack.md)
 - Start/stop/repeat with docker-compose
 - Persist content with docker volumes
 - Switch "projects" (-p option) to use different sets of volumes

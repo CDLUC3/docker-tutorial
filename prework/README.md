@@ -4,9 +4,9 @@
 
 ## Install docker and docker-compose
 _Please complete the following before the first session.  Reach out for help if the installation steps do not work for you._
-- [Windows 10 Setup](prework/Windows10.md)
-- [MacOS Setup](prework/MacOS.md)
-- [Linux Setup](prework/Linux.md)
+- [Windows 10 Setup](Windows10.md)
+- [MacOS Setup](MacOS.md)
+- [Linux Setup](Linux.md)
 
 ## Clone this repository
 ```
