@@ -1,3 +1,7 @@
+---
+title: "Session 1: Using the docker command"
+---
+
 {% include nav.html %}
 
 - [Finding a Docker Image](search.dockerhub.md)

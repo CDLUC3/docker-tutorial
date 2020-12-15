@@ -1,6 +1,8 @@
-{% include nav.html %}
+---
+title: "Session 2: Orchestration with the docker-compose command"
+---
 
-# Session 2
+{% include nav.html %}
 
 - [Migrate stack to docker-compose](migrate.stack.md)
 - Start/stop/repeat with docker-compose

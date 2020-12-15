@@ -6,12 +6,12 @@ UC3 staff use MySql, Java, and Ruby, so the sample docker files will use these t
 ## Pre Work
 [Pre Work - Installations](prework/)
 
-## Session 1: Docker Images and Containers
+## Session 1: Docker Images and Containers - Using the docker command
 Execute code using the docker command.  Use docker command line ags.
 
 [Session 1](session1/)
 
-## Session 2: Orchestrate sample containers with docker-compose
+## Session 2: Orchestration with the docker-compose command
 Hands-on orchestration with docker-compose.  Discussion of other orchestration options.
 
 [Session 2](session2/)
