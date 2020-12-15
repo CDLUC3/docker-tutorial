@@ -1,5 +1,5 @@
 ---
-title: Session 1: Using the docker command
+title: "Session 1: Using the docker command"
 ---
 
 {% include nav.html %}
