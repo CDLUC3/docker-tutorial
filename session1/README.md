@@ -1,6 +1,6 @@
 ---
 title: Session 1
-nextpage: search.dockerhub.md
+nextpage: search.dockerhub
 ---
 
 {% include nav.html %}
@@ -20,4 +20,3 @@ nextpage: search.dockerhub.md
 - Create Dockerfile/java container to ingest content from a CSV
 - Create Dockerfile/ruby/puma container to read from the database and display content on a web page
 
-{% include next.html %}
