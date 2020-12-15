@@ -1,6 +1,7 @@
+---
+title: Linux Desktop setup for Docker 
+---
 {% include nav.html %}
-
-# Linux Desktop setup for Docker 
 
 ## Install Git
 

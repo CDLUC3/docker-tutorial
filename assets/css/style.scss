@@ -26,3 +26,11 @@ body section.page-header {
 span.pagename {
   font-weight: bold;
 }
+
+div.next {
+  border-top: thin double gray;
+  border-bottom: thin double gray;
+  text-align: right;
+  width: 100%;
+  prefix: '---> Next Page: '
+}

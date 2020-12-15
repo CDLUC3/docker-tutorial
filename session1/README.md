@@ -1,3 +1,8 @@
+---
+title: Session 1
+next: search.dockerhub.md
+---
+
 {% include nav.html %}
 
 # Session 1
@@ -16,3 +21,5 @@
 - Create Dockerfile/container to customize database and load default content
 - Create Dockerfile/java container to ingest content from a CSV
 - Create Dockerfile/ruby/puma container to read from the database and display content on a web page
+
+{% include next.html %}

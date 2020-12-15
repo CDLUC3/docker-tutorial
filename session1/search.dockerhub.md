@@ -1,6 +1,8 @@
+---
+title: Finding Images on DockerHub
+next: simple.linux.commands.md
+---
 {% include nav.html %}
-
-# Finding Images on DockerHub
 
 Numerous **Docker images** have been created and published to make it possible to run applications with Docker.
 
@@ -14,3 +16,5 @@ Numerous **Docker images** have been created and published to make it possible t
 Many images are built on Linux distributions such as [ubuntu](https://hub.docker.com/search?q=ubuntu&type=image).
 
 - [Run Simple Linux Commands](simple.linux.commands.md)
+
+{% include next.html %}
