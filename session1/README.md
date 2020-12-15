@@ -1,7 +1,3 @@
----
----
-
-{% include nav.html %}
 
 - [Finding a Docker Image](search.dockerhub.md)
 - [Run Simple Linux Commands](simple.linux.commands.md)
