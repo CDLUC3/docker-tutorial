@@ -1,6 +1,5 @@
 ---
-title: Session 1
-nextpage: search.dockerhub
+title: Session 1 - Using the docker command
 ---
 
 {% include nav.html %}
