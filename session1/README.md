@@ -2,6 +2,7 @@
 
 # Session 1
 
+- [Finding a Docker Image](search.dockerhub.md)
 - [Run Simple Linux Commands](simple.linux.commands.md)
 - [Run MySql](run.mysql.md)
 
