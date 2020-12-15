@@ -1,7 +1,3 @@
----
-title: "Session 1"
----
-
 {% include nav.html %}
 
 - [Finding a Docker Image](search.dockerhub.md)
