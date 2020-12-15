@@ -36,4 +36,6 @@ div.next {
 
 div.next a:before {
   content: '---> Next Page: ';
+  border: thick solid #147080;
+  padding: 3px;
 }

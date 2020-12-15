@@ -1,1 +1,5 @@
-<div class="next"><a href='{{page.nextpage}}'>{{page.nextpage}}</a></div>
+<div class="next">
+  {% if page.nextpage != '' %}
+  <a href='{{page.nextpage}}'>{{page.nextpage}}</a>
+  {% endif %}  
+</div>

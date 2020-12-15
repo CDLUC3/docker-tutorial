@@ -2,6 +2,7 @@
 title: Run Simple Linux Commands in Docker
 nextpage: 
 ---
+
 {% include nav.html %}
 
 When a docker image is **run**, it becomes a **docker container**.  
