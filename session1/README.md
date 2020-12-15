@@ -1,11 +1,9 @@
 ---
 title: Session 1
-next: search.dockerhub.md
+nextpage: search.dockerhub.md
 ---
 
 {% include nav.html %}
-
-# Session 1
 
 - [Finding a Docker Image](search.dockerhub.md)
 - [Run Simple Linux Commands](simple.linux.commands.md)

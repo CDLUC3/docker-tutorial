@@ -1,6 +1,6 @@
 ---
 title: Finding Images on DockerHub
-next: simple.linux.commands.md
+nextpage: simple.linux.commands.md
 ---
 {% include nav.html %}
 
