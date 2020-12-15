@@ -1,5 +1,6 @@
 ---
-title: "Session 1: Using the docker command"
+title: "Creating Docker Images and Containers Using the docker command"
+nextpage: search.dockerhub
 ---
 
 {% include nav.html %}
@@ -19,3 +20,4 @@ title: "Session 1: Using the docker command"
 - Create Dockerfile/java container to ingest content from a CSV
 - Create Dockerfile/ruby/puma container to read from the database and display content on a web page
 
+{% include next.html %}

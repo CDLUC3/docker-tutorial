@@ -1,5 +1,5 @@
 ---
-title: "Session 2: Orchestration with the docker-compose command"
+title: "Orchestration with the docker-compose command"
 ---
 
 {% include nav.html %}

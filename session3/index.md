@@ -1,5 +1,5 @@
 ---
-title: "Session 3: Using Docker in common software development tools"
+title: "Using Docker in common software development tools"
 ---
 
 {% include nav.html %}

@@ -1,6 +1,8 @@
-{% include nav.html %}
+---
+title: "Docker Resources"
+---
 
-# Resources
+{% include nav.html %}
 
 ## Essential Resources
 - [docker command line reference](https://docs.docker.com/engine/reference/commandline/docker/)

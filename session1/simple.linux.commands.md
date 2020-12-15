@@ -1,6 +1,8 @@
+---
+title: Run Simple Linux Commands in Docker
+nextpage: 
+---
 {% include nav.html %}
-
-# Run Simple Linux Commands in Docker
 
 When a docker image is **run**, it becomes a **docker container**.  
 
@@ -47,3 +49,4 @@ root@1b2d258d1575:/# hostname
 
 When you wish to network your containers, you can assign names to the containers to make them easy to locate.
 
+{% include next.html %}
