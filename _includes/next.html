@@ -1,5 +1,5 @@
 <div class="next">
-  {% if page.nextpage != '' && page.nextpage %}
+  {% if !(page.nextpage == null || page.nextpage == '') %}
   <span class="next">
     <a href='{{page.nextpage}}'>{{page.nextpage}}</a>
   </span>
