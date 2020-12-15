@@ -34,10 +34,13 @@ div.next {
   width: 100%;
 }
 
-div.next a:before {
-  content: '---> Next Page: ';
+div.next span.next {
   border: thin solid #147080;
   background-color: #15836E;
   color: white;
   padding: 3px;
+}
+
+div.next a:before {
+  content: '---> Next Page: ';
 }
