@@ -41,6 +41,10 @@ div.next span.next {
   padding: 3px;
 }
 
+div.next a {
+  color: white;
+}
+
 div.next a:before {
   content: '---> Next Page: ';
 }
