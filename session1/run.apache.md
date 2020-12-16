@@ -216,6 +216,21 @@ winpty is not needed since a terminal is not being used.
 docker run --rm --name apache -d -p 9999:80 -v "$(pwd)/examples/session1://usr/local/apache2/htdocs/" httpd
 ```
 
+## Use docker exec to verify the directory mount
+
+### MacOS/Linux
+```
+docker exec -it apache ls /usr/local/apache2/htdocs
+```
+
+### Windows
+```
+winpty docker exec -it apache ls //usr/local/apache2/htdocs
+```
+
+```output
+README.md  copied.txt  example1.txt  example2.txt
+```
 ## View the following files in a browser or with curl
 - [http://localhost:9999/example1.txt](http://localhost:9999/example1.txt)
 - [http://localhost:9999/example2.txt](http://localhost:9999/example2.txt)
