@@ -167,7 +167,7 @@ Copy a sample file *into* the apache container.
 docker cp examples/session1/copied.txt apache:/usr/local/apache2/htdocs/
 ```
 
-View the file in a browser: http://localhost:9999/copied.txt
+View the file in a browser: [http://localhost:9999/copied.txt](http://localhost:9999/copied.txt)
 
 View the file with curl
 ```

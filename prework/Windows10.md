@@ -1,5 +1,6 @@
 ---
 title: Windows 10 setup for Docker 
+nextpage: VerifyInstall.html
 ---
 {% include nav.html %}
 
@@ -38,8 +39,4 @@ root@653eeaeb274b:/# exit
 exit
 ```
 
-## Verify Docker Compose
-
-```
-docker-compose version
-```
+{% include next.html %}

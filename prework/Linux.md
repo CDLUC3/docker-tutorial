@@ -1,5 +1,6 @@
 ---
 title: Linux Desktop setup for Docker 
+nextpage: VerifyInstall.html
 ---
 {% include nav.html %}
 
@@ -33,23 +34,4 @@ Start with the following instructions.  Reach out for assistance.
 
 https://docs.docker.com/engine/install/
 
-## Verify Running Docker from your Terminal
-
-```shell
-winpty docker run -it --rm ubuntu /bin/bash
-```
-
-Enter `echo hello` then enter `exit`
-
-```output
-root@653eeaeb274b:/# echo hello
-hello
-root@653eeaeb274b:/# exit
-exit
-```
-
-## Verify Docker Compose
-
-```
-docker-compose version
-```
+{% include next.html %}

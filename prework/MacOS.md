@@ -1,5 +1,6 @@
 ---
 title: MacOS setup for Docker
+nextpage: VerifyInstall.html
 ---
 
 {% include nav.html %}
@@ -20,23 +21,5 @@ In your terminal, type the following command. If git is not yet installed, you w
 git version
 ```
 
-## Verify Running Docker from your Terminal
+{% include next.html %}
 
-```shell
-docker run -it --rm ubuntu /bin/bash
-```
-
-Enter `echo hello` then enter `exit`
-
-```output
-root@653eeaeb274b:/# echo hello
-hello
-root@653eeaeb274b:/# exit
-exit
-```
-
-## Verify Docker Compose
-
-```
-docker-compose version
-```
