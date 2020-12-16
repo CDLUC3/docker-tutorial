@@ -46,7 +46,7 @@ git version 2.21.0 (Apple Git-122)
 
 ## Verify git repo
 
-```output
+```
 git remote -v
 ```
 

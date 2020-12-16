@@ -44,7 +44,7 @@ docker logs apache
 
 The command above will *cat* the log file.
 
-```
+```output
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
 [Wed Dec 16 17:17:24.867258 2020] [mpm_event:notice] [pid 1:tid 140030725198976] AH00489: Apache/2.4.46 (Unix) configured -- resuming normal operations
@@ -178,6 +178,35 @@ Stop the container.
 ```
 docker stop apache
 ```
+
+## Mount a data volume into the container
+
+In the next example, we will mount a folder of test files into our apache container.
+
+```
+ls examples/session1
+```
+
+```output
+README.md       copied.txt      example1.txt    example2.txt
+```
+
+### MacOS/Linux
+```
+docker run --rm --name apache -d -p 9999:80 -v "$(pwd)/examples/session1:/usr/local/apache2/htdocs/" httpd
+```
+
+### Windows - you must reference the root directory of the container with **//**
+
+winpty is not needed since a terminal is not being used.
+```
+docker run --rm --name apache -d -p 9999:80 -v "$(pwd)/examples/session1://usr/local/apache2/htdocs/" httpd
+```
+
+## View the following files in a browser or with curl
+- [http://localhost:9999/example1.txt](http://localhost:9999/example1.txt)
+- [http://localhost:9999/example2.txt](http://localhost:9999/example2.txt)
+- [http://localhost:9999/copied.txt](http://localhost:9999/copied.txt)
 
 {% include next.html %}
 
