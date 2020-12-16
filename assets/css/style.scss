@@ -49,6 +49,6 @@ div.next a:before {
   content: '---> Next Page: ';
 }
 
-pre:has(code.language-output) {
-  background-color: #27f7cd !important;
+code.language-output {
+  color: #137763;
 }
