@@ -245,7 +245,6 @@ curl "http://localhost:9999/example2.txt"
 Example 2
 ```
 
-
 Stop the container.
 ```
 docker stop apache
