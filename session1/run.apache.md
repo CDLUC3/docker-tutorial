@@ -116,6 +116,10 @@ Note the success:
 
 Run *docker ps*.  Note the port mapping on the container.
 
+```
+docker ps -a
+```
+
 ```output
 CONTAINER ID        IMAGE               COMMAND              CREATED              STATUS              PORTS                NAMES
 eba7c4d0b827        httpd               "httpd-foreground"   About a minute ago   Up About a minute   0.0.0.0:80->80/tcp   apache
@@ -153,6 +157,11 @@ Note the success:
 
 Run *docker ps*.  Note the port mapping on the container.
 
+```
+docker ps -a
+```
+
+
 ```output
 CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS              PORTS                  NAMES
 f63163c0e425        httpd               "httpd-foreground"   39 seconds ago      Up 37 seconds       0.0.0.0:9999->80/tcp   apache
@@ -172,6 +181,10 @@ View the file in a browser: [http://localhost:9999/copied.txt](http://localhost:
 View the file with curl
 ```
 curl "http://localhost:9999/copied.txt"
+```
+
+```output
+File copied into container.
 ```
 
 Stop the container.
@@ -207,6 +220,30 @@ docker run --rm --name apache -d -p 9999:80 -v "$(pwd)/examples/session1://usr/l
 - [http://localhost:9999/example1.txt](http://localhost:9999/example1.txt)
 - [http://localhost:9999/example2.txt](http://localhost:9999/example2.txt)
 - [http://localhost:9999/copied.txt](http://localhost:9999/copied.txt)
+
+```
+curl "http://localhost:9999/copied.txt"
+```
+
+```output
+File copied into container.
+```
+
+```
+curl "http://localhost:9999/example1.txt"
+```
+
+```output
+Example 1
+```
+
+```
+curl "http://localhost:9999/example2.txt"
+```
+
+```output
+Example 2
+```
 
 
 Stop the container.
