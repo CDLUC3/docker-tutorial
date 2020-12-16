@@ -15,6 +15,4 @@ Numerous **Docker images** have been created and published to make it possible t
 
 Many images are built on Linux distributions such as [ubuntu](https://hub.docker.com/search?q=ubuntu&type=image).
 
-- [Run Simple Linux Commands](simple.linux.commands.md)
-
 {% include next.html %}
