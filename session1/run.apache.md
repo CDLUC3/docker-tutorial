@@ -69,7 +69,7 @@ curl -v "http://localhost:80"
 ```
 
 Note that the connection fails
-```
+```output
 *   Trying 127.0.0.1...
 * TCP_NODELAY set
 * Connection failed
@@ -110,13 +110,13 @@ curl "http://localhost:80"
 ```
 
 Note the success:
-```
+```output
 <html><body><h1>It works!</h1></body></html>
 ```
 
 Run *docker ps*.  Note the port mapping on the container.
 
-```
+```output
 CONTAINER ID        IMAGE               COMMAND              CREATED              STATUS              PORTS                NAMES
 eba7c4d0b827        httpd               "httpd-foreground"   About a minute ago   Up About a minute   0.0.0.0:80->80/tcp   apache
 ```
@@ -147,13 +147,13 @@ curl "http://localhost:9999"
 ```
 
 Note the success:
-```
+```output
 <html><body><h1>It works!</h1></body></html>
 ```
 
 Run *docker ps*.  Note the port mapping on the container.
 
-```
+```output
 CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS              PORTS                  NAMES
 f63163c0e425        httpd               "httpd-foreground"   39 seconds ago      Up 37 seconds       0.0.0.0:9999->80/tcp   apache
 ```

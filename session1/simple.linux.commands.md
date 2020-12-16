@@ -43,7 +43,7 @@ docker run -it --rm ubuntu
 ```
 
 You can issue commands in your your container.
-```
+```output
 root@91abfa3e77ba:/# ls
 bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 root@91abfa3e77ba:/# hostname
@@ -62,7 +62,7 @@ docker run -it --rm --name mycontainer ubuntu
 
 Browse the /tmp directory, note that it is empty
 
-```
+```output
 root@8bb9eb68e3e9:/# ls /tmp
 root@8bb9eb68e3e9:/# 
 ```
@@ -76,7 +76,7 @@ docker ps -a
 ```
 
 Note the results.  You can refer to your running container by the container id or by the name you assigned to the container.
-```
+```output
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 8bb9eb68e3e9        ubuntu              "/bin/bash"         2 minutes ago       Up 2 minutes                            mycontainer
 ```
@@ -89,14 +89,14 @@ docker exec -it mycontainer bash
 ```
 
 From this new terminal, create a file
-```
+```output
 root@8bb9eb68e3e9:/# echo "hello from docker exec" > /tmp/hello.txt
 root@8bb9eb68e3e9:/# ls /tmp
 hello.txt
 ```
 
 Return to your original terminal.  From there, run `ls /tmp`
-```
+```output
 root@8bb9eb68e3e9:/# ls /tmp
 hello.txt
 ```
@@ -110,7 +110,7 @@ docker ps -a
 ```
 
 Result
-```
+```output
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 ```
 
@@ -121,7 +121,7 @@ docker run -it --rm --name mycontainer ubuntu
 
 Note that when a new container is created, the /tmp directory is empty.
 
-```
+```output
 root@c5eb44f52795:/# ls /tmp
 root@c5eb44f52795:/# 
 ```
@@ -136,7 +136,7 @@ docker run -it --name mycontainer ubuntu
 ```
 
 Create a test file
-```
+```output
 root@f3c626708043:/# echo "hello" > /tmp/new_hello.txt
 ```
 
@@ -149,7 +149,7 @@ docker ps -a
 
 Note that *mycontainer* is stopped.
 
-```
+```output
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
 f3c626708043        ubuntu              "/bin/bash"         39 seconds ago      Exited (0) 17 seconds ago                       mycontainer
 ```
@@ -165,7 +165,7 @@ docker ps -a
 ```
 
 Note that *mycontainer* is restarted.
-```
+```output
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 f3c626708043        ubuntu              "/bin/bash"         3 minutes ago       Up 2 seconds                            mycontainer
 ```
@@ -178,7 +178,7 @@ docker exec -it mycontainer bash
 
 List the contents of /tmp.  Note that the test file is still present.
 
-```
+```output
 root@f3c626708043:/# ls /tmp
 new_hello.txt
 ```
@@ -191,6 +191,10 @@ docker ps -a
 ```
 
 Note that *mycontainer* is still running.
+```output
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+f3c626708043        ubuntu              "/bin/bash"         3 minutes ago       Up 2 seconds                            mycontainer
+```
 
 Run *docker stop* to stop the container.
 ```
@@ -203,7 +207,7 @@ docker ps -a
 ```
 
 Note that *mycontainer* is now stopped.
-```
+```output
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
 f3c626708043        ubuntu              "/bin/bash"         6 minutes ago       Exited (0) 3 seconds ago                       mycontainer
 ```
@@ -219,7 +223,7 @@ docker ps -a
 ```
 
 Note that *mycontainer* is no longer present.
-```
+```output
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 ```
 
