@@ -3,6 +3,8 @@ title: Run Apache in Docker
 nextpage: run.mysql.html
 --- 
 
+{% include nav.html %}
+
 An Apache docker image is published on Docker Hub.
 
 https://hub.docker.com/_/httpd
@@ -179,5 +181,5 @@ Stop the container.
 docker stop apache
 ```
 
-{% include nav.html %}
+{% include next.html %}
 
