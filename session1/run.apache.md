@@ -5,9 +5,7 @@ nextpage: run.mysql.html
 
 {% include nav.html %}
 
-An Apache docker image is published on Docker Hub.
-
-https://hub.docker.com/_/httpd
+An [Apache docker image](https://hub.docker.com/_/httpd) is published on Docker Hub.
 
 The following command will start apache.  
 
@@ -33,7 +31,7 @@ docker ps -a
 
 Note the container is running.
 
-```
+```output
 CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS              PORTS               NAMES
 b2df9372ee88        httpd               "httpd-foreground"   53 seconds ago      Up 52 seconds       80/tcp              apache
 ```
@@ -61,7 +59,7 @@ docker logs -f apache
 
 ## Attempt to connect to apache.
 
-From a browser: http://localhost 
+From a browser: [http://localhost:80](http://localhost:80)
 
 _If you already have a web server running on your machine, you will need to stop that web server or skip the next couple steps._
 
@@ -102,7 +100,7 @@ docker run --rm --name apache -d -p 80:80 httpd
 
 ## Attempt to connect to apache.
 
-From a browser: http://localhost 
+From a browser: [http://localhost:80](http://localhost:80) 
 
 _If you already have a web server running on your machine, you will need to stop that web server or skip the next couple steps._
 
@@ -139,7 +137,7 @@ docker run --rm --name apache -d -p 9999:80 httpd
 
 ## Attempt to connect to apache.
 
-From a browser: http://localhost:9999 
+From a browser: [http://localhost:9999](http://localhost:9999) 
 
 _If you already have a web server running on your machine, you will need to stop that web server or skip the next couple steps._
 
