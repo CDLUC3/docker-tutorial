@@ -208,5 +208,11 @@ docker run --rm --name apache -d -p 9999:80 -v "$(pwd)/examples/session1://usr/l
 - [http://localhost:9999/example2.txt](http://localhost:9999/example2.txt)
 - [http://localhost:9999/copied.txt](http://localhost:9999/copied.txt)
 
+
+Stop the container.
+```
+docker stop apache
+```
+
 {% include next.html %}
 

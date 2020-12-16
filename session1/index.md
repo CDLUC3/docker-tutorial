@@ -7,6 +7,7 @@ nextpage: search.dockerhub
 
 - [Finding a Docker Image](search.dockerhub.md)
 - [Run Simple Linux Commands](simple.linux.commands.md)
+- [Run Apache in Docker](run.apache.md)
 - [Run MySql](run.mysql.md)
 
 
