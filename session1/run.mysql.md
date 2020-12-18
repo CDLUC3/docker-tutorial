@@ -5,10 +5,12 @@ nextpage:
 
 {% include nav.html %}
 
+## Start a MySql container in docker
 ```
 docker run --rm --name mydb -e MYSQL_ROOT_PASSWORD=password -d mysql
 ```
 
+View the log files for the server startup
 ```
 docker logs -f mydb
 ```
@@ -17,7 +19,7 @@ docker logs -f mydb
 2020-12-16 21:44:51+00:00 [Note] [Entrypoint]: Temporary server started.
 ```
 
-
+Display the version of the server that is running
 ```
 docker exec -it mydb mysql --version
 ```
@@ -26,6 +28,7 @@ docker exec -it mydb mysql --version
 mysql  Ver 8.0.22 for Linux on x86_64 (MySQL Community Server - GPL)
 ```
 
+Stop the container
 ```
 docker stop mydb
 ```
@@ -33,10 +36,12 @@ docker stop mydb
 ## Run a different version of mysql
 [Available MySql Tags on GitHub](https://hub.docker.com/_/mysql?tab=tags&page=1&ordering=last_updated)
 
+Start MySql 5.7 using a tagged version of the MySql Image
 ```
 docker run --rm --name mydb -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7
 ```
 
+Display the version of the server that is running
 ```
 docker exec -it mydb mysql --version
 ```
@@ -45,18 +50,76 @@ docker exec -it mydb mysql --version
 mysql  Ver 14.14 Distrib 5.7.31, for Linux (x86_64) using  EditLine wrapper
 ```
 
-## Connect to contailer using mysql cli
+## Connect to contailer using mysql cli _within_ the container
+
+```
+docker exec -it mydb mysql -uroot --password=password -e "select 1, user(), now()"
+```
+
+```output
++---+----------------+---------------------+
+| 1 | user()         | now()               |
++---+----------------+---------------------+
+| 1 | root@localhost | 2020-12-18 23:01:26 |
++---+----------------+---------------------+
+```
+
+You can also interacively modify your database server.
 
 ```
 docker exec -it mydb mysql -uroot --password=password
 ```
 
+Create a database and a database table.
+```sql
+create database mydb;
+use mydb;
+create table users (
+  id int, 
+  first_name varchar(40), 
+  last_name varchar(40)
+);
+describe users;
+```
 
-- TODO
-  - Connect to mysql container from local mysql cli (if available)
-  - Create database table and content
-- Create Dockerfile/container to customize database and load default content
-- Create Dockerfile/java container to ingest content from a CSV
-- Create Dockerfile/ruby/puma container to read from the database and display content on a web page
+Stop the container
+```
+docker stop mydb
+```
+
+## Reflect - What is challenging about the MySql approach so far?
+
+- Lots of specific steps
+- Lots of command line parameters
+- Difficult to reproduce
+
+## Use a Dockerfile to build your image
+
+A Dockerfile creates a reproduceable definition for a Docker image. ([Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)).
+
+A Dockerfile starts with a base image (such as ubuntu, apache, mysql) upon which you commit layers of changes.
+
+As each layer is applied, Docker can cache the result of the build making it faster to rebuild your image in the future.  The RUN command in a Dockerfile executes a shell command.
+
+Hints:
+- place the least volatile parts of your image definition at the top to take advantage of caching
+- minimize the number of layers in your dockerfile to keep the image small and fast to build
+
+The following 2 steps 
+```dockerfile
+RUN echo "woof" > dog.txt
+RUN echo "meow" > cat.txt
+```
+
+Could be combined as
+```dockerfile
+RUN echo "woof" > dog.txt && echo "meow" > cat.txt
+```
+
+To make this more readable...
+```dockerfile
+RUN echo "woof" > dog.txt && \
+    echo "meow" > cat.txt
+```
 
 {% include next.html %}
