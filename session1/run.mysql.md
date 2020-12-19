@@ -133,8 +133,61 @@ In particular, check the following
 - Initializing a Fresh Instance
 
 ## Sample files
-- [../examples/session1/mysql/Dockerfile](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/mysql/Dockerfile)
-- [../examples/session1/mysql/init.sql](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/mysql/init.sql)
+- [examples/session1/mysql/Dockerfile](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/mysql/Dockerfile)
+- [examples/session1/mysql/init.sql](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/mysql/init.sql)
 
+## Build the dockerfile
+
+From the root directory of the tutorial, run the following
+```
+docker build -t my-mysql examples/session1/mysql
+```
+
+You will see the following output.  Note that the build contains 10 steps.  
+
+These are the layers added to the dockerfile.
+```output
+Sending build context to Docker daemon  3.584kB
+Step 1/10 : FROM mysql
+
+...
+
+Successfully built 8e5d78c1a034
+Successfully tagged my-mysql:latest
+```
+
+Run the following to start a container using the image that you built.
+
+```
+docker run --rm --name mydb -p 3306:3306 -d my-mysql
+```
+
+Run the following command to confirm that the database initialization is complete.
+
+```
+docker logs mydb
+```
+
+```output
+...
+2020-12-19T00:45:36.285095Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.22'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+```
+
+Run the following to confirm that the tables that we defined were added to the database.
+
+```
+docker exec -it mydb mysql -u root --password=password -D userdb -e 'show tables;'
+```
+
+You should see the following output
+```output
+mysql: [Warning] Using a password on the command line interface can be insecure.
++------------------+
+| Tables_in_userdb |
++------------------+
+| contact          |
+| users            |
++------------------+
+```
 
 {% include next.html %}
