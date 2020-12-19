@@ -133,8 +133,8 @@ In particular, check the following
 - Initializing a Fresh Instance
 
 ## Sample files
-- [../examples/session1/mysql/Dockerfile](../examples/session1/mysql/Dockerfile)
-- [../examples/session1/mysql/init.sql](../examples/session1/mysql/init.sql)
+- [../examples/session1/mysql/Dockerfile](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/mysql/Dockerfile)
+- [../examples/session1/mysql/init.sql](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/mysql/init.sql)
 
 
 {% include next.html %}
