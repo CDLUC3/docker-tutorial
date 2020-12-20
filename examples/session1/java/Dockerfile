@@ -7,7 +7,9 @@ ADD . /tmp
 
 # The maven install rule (in pom.xml) copies all dependent jar files into the target directory.
 # Mvn clean will delete all temporary .class files from the build directory.  This makes the final image smaller.
-RUN mvn install && \
+RUN mkdir appdir && \
+    mvn install && \
+    cp target/*.jar appdir && \
     mvn clean
 
 # This is a multi stage docker build.  Maven is not needed once the build is complete.
@@ -16,7 +18,7 @@ FROM openjdk:8
 
 WORKDIR /tmp
 
-COPY --from=build /tmp/target/*.jar /tmp/
+COPY --from=build /tmp/appdir/*.jar /tmp/
 
 # The maven build bundles all dependency names into the manifest of the generated jar file.
 # Run "ls /tmp" to see the set of runtime jars that are included.
