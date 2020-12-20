@@ -9,6 +9,8 @@ nextpage: search.dockerhub
 - [Run Simple Linux Commands](simple.linux.commands.md)
 - [Run Apache in Docker](run.apache.md)
 - [Run MySql](run.mysql.md)
+- [Run Java](run.java.md)
+- [Run Ruby](run.ruby.md)
 
 
 {% include next.html %}
