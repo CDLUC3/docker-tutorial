@@ -159,7 +159,7 @@ Successfully tagged my-mysql:latest
 Run the following to start a container using the image that you built.
 
 ```
-docker run --rm --name mydb -p 3306:3306 -d my-mysql
+docker run --rm --name mydb -d my-mysql
 ```
 
 Run the following command to confirm that the database initialization is complete.

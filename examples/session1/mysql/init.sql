@@ -1,11 +1,11 @@
-create table users (
-  id int, 
+create or replace table users (
+  id int NOT NULL AUTO_INCREMENT, 
   first_name varchar(40), 
   last_name varchar(40),
   PRIMARY KEY (id)
 );
 
-create table contact (
+create or replace table contact (
   user_id int, 
   email varchar(255),
   phone varchar(40),
