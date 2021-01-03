@@ -22,4 +22,5 @@ CREATE TABLE email (
   UNIQUE KEY email (email)
 );
 
+ALTER USER 'user' IDENTIFIED WITH mysql_native_password BY 'password';
 GRANT ALL ON *.* to 'user'@'%';

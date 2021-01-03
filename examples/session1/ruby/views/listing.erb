@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <h1>User Directory Listing</h1>
+    <p>
+      <a href="/">Home</a>
+    </p>
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Phone</th>
+        <th>Email</th>
+      </tr>
+      <% locals[:data].each do |row| %>
+        <tr>
+        <% row.each do |col| %>
+          <td><%= col %></td>
+        <% end %>
+        </tr>
+      <% end %>
+    </table>
+  </body>
+</html>
