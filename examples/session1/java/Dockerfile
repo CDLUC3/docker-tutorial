@@ -29,4 +29,5 @@ COPY --from=build /tmp/appdir/*.jar /tmp/
 
 # The maven build bundles all dependency names into the manifest of the generated jar file.
 # Run "ls /tmp" to see the set of runtime jars that are included.
-CMD java -jar IngestDemo-1.0.jar
+
+ENTRYPOINT [ "java", "-jar", "IngestDemo-1.0.jar" ] 

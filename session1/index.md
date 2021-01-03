@@ -11,6 +11,7 @@ nextpage: search.dockerhub
 - [Run MySql](run.mysql.md)
 - [Run Java](run.java.md)
 - [Run Ruby](run.ruby.md)
+- [Clean Up Resources](cleanup.md)
 
 
 {% include next.html %}

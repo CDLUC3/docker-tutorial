@@ -136,6 +136,12 @@ In particular, check the following
 - [examples/session1/mysql/Dockerfile](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/mysql/Dockerfile)
 - [examples/session1/mysql/init.sql](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/mysql/init.sql)
 
+Database Schema Notes
+- Note that each user can have 0 or more phone numbers.  
+  - Users can share a phone number such as a land line.  
+- Each user can have 0 or more email addresses.  
+  - Users cannot share email addresses.
+
 ## Build the dockerfile
 
 From the root directory of the tutorial, run the following
@@ -185,7 +191,8 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 +------------------+
 | Tables_in_userdb |
 +------------------+
-| contact          |
+| email            |
+| phone            |
 | users            |
 +------------------+
 ```

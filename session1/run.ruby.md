@@ -1,6 +1,6 @@
 ---
 title: Run Ruby in Docker
-nextpage: ../session2
+nextpage: cleanup.html
 ---
 
 {% include nav.html %}

@@ -3,6 +3,7 @@ package org.cdluc3;
 import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.Statement;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -41,9 +42,9 @@ public class IngestCLI {
         if (id == 0) {
             id = addUser(fname, lname);
         }
+        printRecord(id, fname, lname, email, phone);
         addPhone(id, phone);
         addEmail(id, email);
-        printRecord(id, fname, lname, email, phone);
     }
 
     public int getUserId(String fname, String lname) throws SQLException {
@@ -76,7 +77,7 @@ public class IngestCLI {
     }
 
     public void addPhone(int id, String phone) throws SQLException {
-        if (id == 0 || !phone.isEmpty()) {
+        if (id == 0 || phone.isEmpty()) {
             return;
         }
         try(Connection con = getConnection()){
@@ -85,12 +86,14 @@ public class IngestCLI {
                 stmt.setInt(1, id);
                 stmt.setString(2, phone);
                 stmt.executeUpdate();
+            } catch(SQLIntegrityConstraintViolationException ex) {
+                System.out.println(String.format("\t\tPhone [%s] already exists for user id %d", phone, id));
             }
         }
     }
 
     public void addEmail(int id, String email) throws SQLException {
-        if (id == 0 || !email.isEmpty()) {
+        if (id == 0 || email.isEmpty()) {
             return;
         }
         try(Connection con = getConnection()){
@@ -99,7 +102,9 @@ public class IngestCLI {
                 stmt.setInt(1, id);
                 stmt.setString(2, email);
                 stmt.executeUpdate();
-            }
+            } catch(SQLIntegrityConstraintViolationException ex) {
+                System.out.println(String.format("\t\tEmail [%s] already exists for user id %d", email, id));
+            } 
         }
     }
 
@@ -132,11 +137,10 @@ public class IngestCLI {
     }
 
     public static final void main(String[] argv) {
-        System.out.println("Hello..");
+        String file = argv.length > 0 ? argv[0] : "test.csv";
+        System.out.println(String.format("Import the contents of [%s]", file));
         IngestCLI cli = new IngestCLI();
-        cli.processInput("test.csv");
-
-        System.out.println("...");
+        cli.processInput(file);
     }
 
 }
