@@ -22,10 +22,11 @@ public class IngestCLI {
         return DriverManager.getConnection(connstr, user, password);
     }
 
-    public void printRecord(String fname, String lname, String email, String phone) {
+    public void printRecord(int id, String fname, String lname, String email, String phone) {
         System.out.println(
             String.format(
-                "%10s\t%10s\t%30s\t%10s",
+                "%5d\t%10s\t%10s\t%30s\t%10s",
+                id,
                 fname, 
                 lname, 
                 email,
@@ -36,12 +37,13 @@ public class IngestCLI {
     }
 
     public void addRecord(String fname, String lname, String email, String phone) throws SQLException {
-        printRecord(fname, lname, email, phone);
         int id = getUserId(fname, lname);
         if (id == 0) {
             id = addUser(fname, lname);
         }
-        System.out.println(id);
+        addPhone(id, phone);
+        addEmail(id, email);
+        printRecord(id, fname, lname, email, phone);
     }
 
     public int getUserId(String fname, String lname) throws SQLException {
@@ -71,6 +73,34 @@ public class IngestCLI {
             }
         }
         return 0;
+    }
+
+    public void addPhone(int id, String phone) throws SQLException {
+        if (id == 0 || !phone.isEmpty()) {
+            return;
+        }
+        try(Connection con = getConnection()){
+            String sql = "insert into phone(user_id, phone) select ?, ?";
+            try (PreparedStatement stmt = con.prepareStatement(sql)){
+                stmt.setInt(1, id);
+                stmt.setString(2, phone);
+                stmt.executeUpdate();
+            }
+        }
+    }
+
+    public void addEmail(int id, String email) throws SQLException {
+        if (id == 0 || !email.isEmpty()) {
+            return;
+        }
+        try(Connection con = getConnection()){
+            String sql = "insert into email(user_id, email) select ?, ?";
+            try (PreparedStatement stmt = con.prepareStatement(sql)){
+                stmt.setInt(1, id);
+                stmt.setString(2, email);
+                stmt.executeUpdate();
+            }
+        }
     }
 
     public void processInput(String filename) {

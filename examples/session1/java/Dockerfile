@@ -3,7 +3,14 @@ FROM maven:3-jdk-8 as build
 
 WORKDIR /tmp
 
-ADD . /tmp
+# First download as many pom dependencies as possible regardless of changes to the java code
+# This will expedite subsequent builds that are run
+# https://medium.com/@nieldw/caching-maven-dependencies-in-a-docker-build-dca6ca7ad612
+COPY pom.xml /tmp/
+RUN mvn dependency:go-offline
+
+# Now add the java code
+ADD . /tmp/
 
 # The maven install rule (in pom.xml) copies all dependent jar files into the target directory.
 # Mvn clean will delete all temporary .class files from the build directory.  This makes the final image smaller.
