@@ -52,10 +52,10 @@ The following is a very simple program that parses a CSV file and loads data int
 - [examples/session1/java/src/main/java/org/cdluc3/IngestCLI.java](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/java/src/main/java/org/cdluc3/IngestCLI.java)
 
 The following maven pom file defines the mysql dependency.
-- [examples/session1/java/pom.xml]https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/java/pom.xml)
+- [examples/session1/java/pom.xml](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/java/pom.xml)
 
 The following Dockerfile uses maven to build a directory containing the compiled java application (as a jar) along with all jar file dependencies.
-- [examples/session1/java/Dockerfile]https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/java/Dockerfile)
+- [examples/session1/java/Dockerfile](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session1/java/Dockerfile)
 
 This Dockerfile is a **multi-stage** Dockerfile.  
 - The first stage of the Dockerfile uses maven (maven:3-jdk-8) to compile java code and assemble assets in an install directory.
