@@ -89,7 +89,7 @@ docker exec -it mycontainer bash
 ```
 
 From this new terminal, create a file
-``````container
+```container
 root@8bb9eb68e3e9:/# echo "hello from docker exec" > /tmp/hello.txt
 root@8bb9eb68e3e9:/# ls /tmp
 hello.txt
