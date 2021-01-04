@@ -96,7 +96,7 @@ hello.txt
 ```
 
 Return to your original terminal.  From there, run `ls /tmp`
-```output
+```container
 root@8bb9eb68e3e9:/# ls /tmp
 hello.txt
 ```
@@ -136,7 +136,7 @@ docker run -it --name mycontainer ubuntu
 ```
 
 Create a test file
-```output
+```container
 root@f3c626708043:/# echo "hello" > /tmp/new_hello.txt
 ```
 
