@@ -43,7 +43,7 @@ docker run -it --rm ubuntu
 ```
 
 You can issue commands in your your container.
-```output
+```container
 root@91abfa3e77ba:/# ls
 bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 root@91abfa3e77ba:/# hostname
@@ -62,7 +62,7 @@ docker run -it --rm --name mycontainer ubuntu
 
 Browse the /tmp directory, note that it is empty
 
-```output
+```container
 root@8bb9eb68e3e9:/# ls /tmp
 root@8bb9eb68e3e9:/# 
 ```
@@ -89,7 +89,7 @@ docker exec -it mycontainer bash
 ```
 
 From this new terminal, create a file
-```output
+``````container
 root@8bb9eb68e3e9:/# echo "hello from docker exec" > /tmp/hello.txt
 root@8bb9eb68e3e9:/# ls /tmp
 hello.txt
@@ -121,7 +121,7 @@ docker run -it --rm --name mycontainer ubuntu
 
 Note that when a new container is created, the /tmp directory is empty.
 
-```output
+```container
 root@c5eb44f52795:/# ls /tmp
 root@c5eb44f52795:/# 
 ```
@@ -178,7 +178,7 @@ docker exec -it mycontainer bash
 
 List the contents of /tmp.  Note that the test file is still present.
 
-```output
+```container
 root@f3c626708043:/# ls /tmp
 new_hello.txt
 ```

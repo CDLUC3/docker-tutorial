@@ -1,7 +1,15 @@
 # Docker Tutorial for UC3 Developers
-This will consist of three 90 minute sessions covering various topics in the use of Docker.  The sessions will start in late Jan 2021.
+This will consist of three 90 minute sessions covering various topics in the use of Docker.  
 
-UC3 staff use MySql, Java, and Ruby, so the sample docker files will use these technologies.
+Goals
+- Understainging Docker Images and Docker Containers
+- Creating a Docker Image from a Dockerfile
+- Orchestrating Multiple Docker Containers with Docker Compose
+- Leverage docker technologies from other tools and services
+
+The sessions will start in late Jan 2021.
+
+UC3 staff use MySql, Java, and Ruby, so the sample docker files will use these familiar technologies.
 
 ## Pre Work
 [Pre Work - Installations](prework/)

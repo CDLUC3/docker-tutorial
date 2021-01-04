@@ -21,7 +21,7 @@ winpty docker run -it --rm ubuntu //bin/bash
 ## Interact with the Docker Container
 Enter `echo hello` then enter `exit`
 
-```output
+```container
 root@653eeaeb274b:/# echo hello
 hello
 root@653eeaeb274b:/# exit
