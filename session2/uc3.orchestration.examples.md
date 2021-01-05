@@ -1,6 +1,6 @@
 ---
 title: "UC3 Orchestration Examples"
-nextpage: orchestration.discussion
+nextpage: orchestration.discussion.md
 ---
 
 {% include nav.html %}

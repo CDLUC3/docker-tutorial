@@ -1,6 +1,6 @@
 ---
 title: "Persist Content with Docker Volumes"
-nextpage: project.configurations
+nextpage: project.configurations.md
 ---
 
 {% include nav.html %}

@@ -1,6 +1,6 @@
 ---
 title: "Re-create Containers - What Persists?"
-nextpage: docker.volumes
+nextpage: docker.volumes.md
 ---
 
 {% include nav.html %}
