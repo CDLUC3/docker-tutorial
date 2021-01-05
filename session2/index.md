@@ -1,6 +1,6 @@
 ---
 title: "Orchestration with the docker-compose command"
-nextpage: migrate.stack.md
+nextpage: migrate.stack.html
 ---
 
 {% include nav.html %}

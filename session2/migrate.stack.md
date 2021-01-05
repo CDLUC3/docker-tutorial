@@ -1,6 +1,6 @@
 ---
 title: "Migrate Sample Stack to Docker Compose"
-nextpage: combine.compose-files.md
+nextpage: combine.compose-files.html
 ---
 
 {% include nav.html %}
