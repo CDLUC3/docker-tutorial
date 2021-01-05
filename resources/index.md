@@ -7,7 +7,7 @@ title: "Docker Resources"
 ## Essential Resources
 - [docker command line reference](https://docs.docker.com/engine/reference/commandline/docker/)
 - [dockerfile reference](https://docs.docker.com/engine/reference/builder/)
-- [docker-compose commend line reference](https://docs.docker.com/compose/reference/overview/)
+- [docker-compose command line reference](https://docs.docker.com/compose/reference/overview/)
 - [docker-compose file reference](https://github.com/compose-spec/compose-spec/blob/master/spec.md)
 - [docker hub -- image registry for UC3](https://hub.docker.com/u/cdluc3)
 
