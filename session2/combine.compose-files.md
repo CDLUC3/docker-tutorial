@@ -1,6 +1,6 @@
 ---
 title: "Combine Copmpose Files"
-nextpage: what.persists.html
+nextpage: what.persists
 ---
 
 {% include nav.html %}

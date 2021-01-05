@@ -1,6 +1,6 @@
 ---
 title: "Docker Compose Project Configurations (-p)"
-nextpage: uc3.orchestration.examples.html
+nextpage: uc3.orchestration.examples
 ---
 
 {% include nav.html %}

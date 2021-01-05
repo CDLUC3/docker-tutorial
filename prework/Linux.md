@@ -1,6 +1,6 @@
 ---
 title: Linux Desktop setup for Docker 
-nextpage: VerifyInstall.html
+nextpage: VerifyInstall
 ---
 {% include nav.html %}
 

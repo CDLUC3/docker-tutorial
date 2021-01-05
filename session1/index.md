@@ -1,6 +1,6 @@
 ---
 title: "Creating Docker Images and Containers Using the docker command"
-nextpage: search.dockerhub.html
+nextpage: search.dockerhub
 ---
 
 {% include nav.html %}

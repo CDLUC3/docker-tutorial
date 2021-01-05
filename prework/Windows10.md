@@ -1,6 +1,6 @@
 ---
 title: Windows 10 setup for Docker 
-nextpage: VerifyInstall.html
+nextpage: VerifyInstall
 ---
 {% include nav.html %}
 

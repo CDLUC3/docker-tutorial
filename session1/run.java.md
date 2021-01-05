@@ -1,6 +1,6 @@
 ---
 title: Run Java in Docker
-nextpage: run.ruby.html
+nextpage: run.ruby
 ---
 
 {% include nav.html %}

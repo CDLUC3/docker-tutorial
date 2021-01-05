@@ -1,6 +1,6 @@
 ---
 title: Run Simple Linux Commands in Docker
-nextpage: run.apache.html
+nextpage: run.apache
 ---
 
 {% include nav.html %}

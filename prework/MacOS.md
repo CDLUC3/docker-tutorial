@@ -1,6 +1,6 @@
 ---
 title: MacOS setup for Docker
-nextpage: VerifyInstall.html
+nextpage: VerifyInstall
 ---
 
 {% include nav.html %}

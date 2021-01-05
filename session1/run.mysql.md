@@ -1,6 +1,6 @@
 ---
 title: Run MySql in Docker
-nextpage: run.java.html
+nextpage: run.java
 ---
 
 {% include nav.html %}
