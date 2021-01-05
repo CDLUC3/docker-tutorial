@@ -1,7 +1,7 @@
 <div class="nav">
     <a href="{{site.url}}/resources/">&#x1F4DA; Reference</a>
-    <a href="{{site.url}}">/&#127968; Home</a> 
-    <a href="{{site.url}}/{{page.dir}}"> {{page.dir | replace: "session", " Session " }} </a>
-    <span class='pagename'>{{page.title | default: page.name}}</span>
+    /<a href="{{site.url}}">&#127968; Home</a> 
+    /<a href="{{site.url}}/{{page.dir}}"> {{page.dir | replace: "session", " Session " | replace: "/", "" }} </a>
+    /<span class='pagename'>{{page.title | default: page.name}}</span>
 </div>
 <h1>{{page.title | default: page.name}}</h1>
