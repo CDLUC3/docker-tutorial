@@ -5,7 +5,7 @@ nextpage: docker.volumes
 
 {% include nav.html %}
 
-_This section presumes that you have a running stack of containers created in the [prior section](combine.compose-files)._
+_This section presumes that you have a running stack of containers created in the [prior section](start-stack)._
 
 ## Restart the Containers - Data Persists!
 
@@ -38,7 +38,7 @@ Starting rubyserver ... done
 ```
 
 View the contents of the database from the webserver.  Note that **9** users still exist.
-- http://localhost:4567/listing
+- [http://localhost:4567/listing](http://localhost:4567/listing)
 
 ## Re-create the Containers - Data does NOT persist
 
@@ -74,7 +74,7 @@ Creating rubyserver ... done
 ```
 
 View the contents of the database from the webserver.  Note that **0** users exist.
-- http://localhost:4567/listing
+- [http://localhost:4567/listing](http://localhost:4567/listing)
 
 In the next section we will discuss how to persist content created inside a docker container.
 
