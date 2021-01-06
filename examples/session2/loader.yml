@@ -9,7 +9,8 @@ services:
     networks:
       mynet:
     volumes:
-    - "../session1/java/test.csv:/tmp/test.csv"
+    - "./simpsons.csv:/tmp/simpsons.csv"
+    - "./flanders.csv:/tmp/flanders.csv"
     depends_on:
     - mydb
     stdin_open: true
