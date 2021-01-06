@@ -1,5 +1,5 @@
 ---
-title: "Combine Copmpose Files"
+title: "Combine Compose Files"
 nextpage: what.persists
 ---
 
