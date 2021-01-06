@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  mydb:
+    environment:
+      HELLO: 'sample message for mydb'
+  data-load:
+    environment:
+      HELLO: 'sample message for data-load'
+  rubyserver:
+    environment:
+      HELLO: 'sample message for ruby server'

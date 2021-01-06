@@ -1,0 +1,34 @@
+version: '3.7'
+networks:
+  mynet:
+services:
+  mydb:
+    container_name: mydb
+    image: my-mysql
+    build:
+      context: ../session1/mysql
+      dockerfile: Dockerfile
+    networks:
+      mynet:
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'userdb'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+  rubyserver:
+    container_name: rubyserver
+    depends_on:
+    - mydb
+    image: myruby
+    build:
+      context: ../session1/ruby
+      dockerfile: Dockerfile
+    ports:
+    - published: 4567
+      target: 4567
+    networks:
+      mynet:
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
