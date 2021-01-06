@@ -1,6 +1,6 @@
 ---
 title: "Persist Content with Docker Volumes"
-nextpage: project.configurations
+nextpage: define.volumes.in.compose
 ---
 
 {% include nav.html %}
@@ -8,6 +8,16 @@ nextpage: project.configurations
 Docker containers are intended to be destroyed and re-created frequently.  Unlike a server instance which patched and maintained, a docker container can be destroyed and re-created quickly from a built docker image.
 
 When designing a system comprised of docker files, it is important to identify what data requires persistence.  That data can be persisted using **docker volumes**.
+
+## What is a Docker Volume?
+
+A docker volume is a blob of storage that is managed by docker.
+
+Docker volumes can be accessed by one or more containers.
+
+Docker volumes persist even after a stack has been destroyed.
+
+## Working with Docker Volumes
 
 In the course of working through these exercises, some unnamed docker volumes have likely been created.
 
@@ -101,19 +111,10 @@ test-example
 test-example-new
 ```
 
-## What is a Docker Volume?
-
-A docker volume is a blob of storage that is managed by docker.
-
-Docker volumes can be accessed by one or more containers.
+## Defining docker volumes in a docker-compose file
 
 Docker volumes can be defined in a docker-compose file.
 
-Docker volumes persist even after a stack has been destroyed.
-
 For our sample application, we will persist the MySql database content into a volume.
-
-
-
 
 {% include next.html %}
