@@ -1,6 +1,6 @@
 ---
 title: "VSCode and Docker"
-nextpage: github.actions.and.docker.md
+nextpage: github.actions.and.docker
 ---
 
 {% include nav.html %}

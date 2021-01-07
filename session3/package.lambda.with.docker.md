@@ -1,6 +1,6 @@
 ---
 title: "Package Lambda with Docker"
-nextpage: uc3.docker.examples.md
+nextpage: uc3.docker.examples
 ---
 
 {% include nav.html %}
