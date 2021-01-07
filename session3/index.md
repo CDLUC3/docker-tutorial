@@ -1,17 +1,16 @@
 ---
 title: "Using Docker in common software development tools"
+nextpage: container.registries
 ---
 
 {% include nav.html %}
 
+- [Container Registries](container.registries.md)
 - [Running Docker on a server](running.docker.on.a.server.md)
-- VSCode and Docker
-- GitHub Actions and Docker
-- Packaging Docker Containers for Lambda deployment
-- Container Registries
-  - DockerHub
-  - Amazon ECR
-  - GitHub ??Containers
+- [VSCode and Docker](vscode.and.docker.md)
+- [GitHub Actions and Docker](github.actions.and.docker.md)
+- [Packaging Docker Containers for Lambda deployment](package.lambda.with.docker.md)
+- [UC3 Docker Examples](uc3.docker.examples.md)
+- [Your Ideas](your.ideas.md)
 
-Using a container as a shared development environment
-- https://www.docker.com/blog/how-to-develop-inside-a-container-using-visual-studio-code-remote-containers/
+{% include next.html %}
