@@ -26,7 +26,7 @@ In this command, the **ubuntu** image is being run.
 
 The **entrypoint** for the ubuntu image is being overridden with the command **echo hello**.
 
-The `--rm` option tells docker to delete the container when the process termintes.  By default, stopped containers are not deleted.  It is possible to view their log files.  In most examples in this tutorial, we will utilize the --rm option.
+The `--rm` option tells docker to delete the container when the process termintes.  By default, stopped containers are not deleted.  It is possible to view their log files.  In most examples in this tutorial, we will utilize the `--rm` option.
 
 ## Run ubuntu with the default entrypoint
 
@@ -54,22 +54,13 @@ Linux 91abfa3e77ba 5.4.39-linuxkit #1 SMP Fri May 8 23:03:06 UTC 2020 x86_64 x86
 
 Type `exit` to terminate your container.
 
-When you wish to network your containers, you can assign names to the containers to make them easy to locate.
+When you wish to network your containers, you can assign names (`--name name`) to the containers to make them easy to locate.  The `-d` option indicates that the container should be run in the background.
 
 ```
-docker run -it --rm --name mycontainer ubuntu 
-```
-
-Browse the /tmp directory, note that it is empty
-
-```container
-root@8bb9eb68e3e9:/# ls /tmp
-root@8bb9eb68e3e9:/# 
+docker run -it --rm --name mycontainer -d ubuntu 
 ```
 
 The *docker ps* command can be used to see your running containers.
-
-In a *new console window*, run 
 
 ```
 docker ps -a
@@ -88,20 +79,40 @@ Run docker exec to attach to your container
 docker exec -it mycontainer bash
 ```
 
-From this new terminal, create a file
+Browse the /tmp directory, note that it is empty
+
+```container
+root@8bb9eb68e3e9:/# ls /tmp
+root@8bb9eb68e3e9:/# 
+```
+
+
+Create a file in the /tmp directory
 ```container
 root@8bb9eb68e3e9:/# echo "hello from docker exec" > /tmp/hello.txt
 root@8bb9eb68e3e9:/# ls /tmp
 hello.txt
 ```
 
-Return to your original terminal.  From there, run `ls /tmp`
-```container
-root@8bb9eb68e3e9:/# ls /tmp
+Type `exit` to terminate your terminal session.
+
+Verify that the file is still present in the container
+```
+docker exec -it mycontainer ls /tmp
+```
+
+```output
 hello.txt
 ```
 
-Type `exit` to terminate your container.
+Since the container had been run in the background, we need to stop it explicitly.
+```
+docker stop mycontainer
+```
+
+```output
+mycontainer
+```
 
 Note that the container is no longer running.
 
