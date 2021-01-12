@@ -15,7 +15,7 @@ The container will run in the foreground and log files will be visible in the te
 docker run --rm --name apache httpd
 ```
 
-Hit `Cntl-C` to stop the container.
+Press `Cntl-C` to stop the container.
 
 Add `-d` to run the container in the background.
 
@@ -56,6 +56,8 @@ Add `-f` to *tail* the log file
 ```
 docker logs -f apache
 ```
+
+Press `Cntl-C` to exit the log.
 
 ## Attempt to connect to apache.
 
@@ -201,7 +203,8 @@ ls examples/session1
 ```
 
 ```output
-README.md       copied.txt      example1.txt    example2.txt
+README.md       example1.txt    java            ruby
+copied.txt      example2.txt    mysql
 ```
 
 ### MacOS/Linux
@@ -229,7 +232,7 @@ winpty docker exec -it apache ls //usr/local/apache2/htdocs
 ```
 
 ```output
-README.md  copied.txt  example1.txt  example2.txt
+README.md  copied.txt  example1.txt  example2.txt  java  mysql  ruby
 ```
 ## View the following files in a browser or with curl
 - [http://localhost:9999/example1.txt](http://localhost:9999/example1.txt)

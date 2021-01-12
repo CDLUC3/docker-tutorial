@@ -16,8 +16,11 @@ docker logs -f mydb
 ```
 
 ```output
-2020-12-16 21:44:51+00:00 [Note] [Entrypoint]: Temporary server started.
+2021-01-12T22:21:15.985343Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.22'...
 ```
+
+Press `Cntl-C` to exit the log.
+
 
 Display the version of the server that is running
 ```
@@ -80,6 +83,22 @@ create table users (
   last_name varchar(40)
 );
 describe users;
+```
+
+```container
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| id         | int(11)     | YES  |     | NULL    |       |
+| first_name | varchar(40) | YES  |     | NULL    |       |
+| last_name  | varchar(40) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+```
+
+Type exit to exit the mysql session
+```container
+mysql> exit
 ```
 
 Stop the container
