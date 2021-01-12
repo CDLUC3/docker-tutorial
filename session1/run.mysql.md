@@ -216,4 +216,10 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 +------------------+
 ```
 
+Stop the container
+```
+docker stop mydb
+```
+
+
 {% include next.html %}

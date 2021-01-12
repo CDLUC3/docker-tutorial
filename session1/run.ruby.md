@@ -30,5 +30,10 @@ docker run --rm -it -p 4567:4567 --network mynet --name rubyserver myruby
 ## Open a web page for the application
 
 - [Sample Ruby App](http://localhost:4567)
+- Navigate to the listing page
+- Note that the users are present in the table
+
+Press `Cntl-C` to exit the container.
+
 
 {% include next.html %}

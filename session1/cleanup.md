@@ -42,12 +42,4 @@ If mynet exists, delete it
 docker network rm mynet
 ```
 
-## Docker volumes
-
-```
-docker volume ls
-```
-
-TODO: if any named volumes were created during the exercises, add delete notes here.
-
 {% include next.html %}

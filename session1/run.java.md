@@ -18,6 +18,11 @@ To view the network you created, run the following
 docker network ls
 ```
 
+```output
+NETWORK ID     NAME                         DRIVER    SCOPE
+e6b0914eb41c   mynet                        bridge    local
+```
+
 ## Run the mysql container we built in the prior exercise within the docker network
 ```
 docker run --rm --name mydb -d --network mynet my-mysql
@@ -62,7 +67,7 @@ This Dockerfile is a **multi-stage** Dockerfile.
 - The second stage of the Dockerfile uses the java jre (openjdk:8) to run the java code.  
   - At container runtime, maven is no longer needed so it is not a part of the final image that is assembled.
 
-## Build the java container
+## Build the java docker image
 ```
 docker build -t my-java examples/session1/java
 ```
