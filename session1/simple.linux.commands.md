@@ -53,6 +53,10 @@ Linux 91abfa3e77ba 5.4.39-linuxkit #1 SMP Fri May 8 23:03:06 UTC 2020 x86_64 x86
 ```
 
 Type `exit` to terminate your container.
+```container
+root@91abfa3e77ba:/# exit
+```
+
 
 When you wish to network your containers, you can assign names (`--name name`) to the containers to make them easy to locate.  The `-d` option indicates that the container should be run in the background.
 
@@ -95,6 +99,9 @@ hello.txt
 ```
 
 Type `exit` to terminate your terminal session.
+```container
+root@8bb9eb68e3e9:/# exit
+```
 
 Verify that the file is still present in the container
 ```
@@ -138,6 +145,9 @@ root@c5eb44f52795:/#
 ```
 
 Type `exit` to terminate your container.
+```container
+root@c5eb44f52795:/# exit
+```
 
 ## Stopping and starting a container without --rm
 
@@ -152,6 +162,9 @@ root@f3c626708043:/# echo "hello" > /tmp/new_hello.txt
 ```
 
 Type `exit` to terminate your container.
+```container
+root@f3c626708043:/# exit
+```
 
 Run *docker ps* to view your containers.  
 ```
@@ -195,6 +208,9 @@ new_hello.txt
 ```
 
 Type `exit` to terminate your exec session.
+```container
+root@f3c626708043:/# exit
+```
 
 Run *docker ps* to view your containers.  
 ```
