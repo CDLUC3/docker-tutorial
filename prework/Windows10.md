@@ -20,8 +20,9 @@ Run the following command to verify your install
 
 ## Note for Windows users running docker commands
 
-- When running a docker command that requires terminal interaction, prefix your docker command with `winpty`
-- When referencing a the root directory of a docker container, use `//` instead of `/`.  
+
+- When running a Docker command that requires terminal interaction, prefix your docker command with `winpty`
+- When referencing a fully qualified path or the root directory of a docker container, use `//` instead of `/`.  
   - Example use `//tmp` for `/tmp`
 
 ## Verify Running Docker from your Terminal
