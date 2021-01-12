@@ -149,9 +149,9 @@ Type `exit` to terminate your container.
 root@c5eb44f52795:/# exit
 ```
 
-## Stopping and starting a container without --rm
+## Stopping and starting a container without `--rm`
 
-Restart your container without --rm
+Restart your container without `--rm`
 ```
 docker run -it --name mycontainer ubuntu 
 ```
