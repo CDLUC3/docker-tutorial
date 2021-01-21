@@ -128,15 +128,7 @@ public class IngestCLI {
         }  
     }
 
-    public void processInput1() {
-        try {  
-            runQuery("select 1, now(), user()");
-        } catch(Exception e) { 
-            System.out.println(e);
-        }  
-    }
-
-    public static final void main(String[] argv) {
+   public static final void main(String[] argv) {
         String file = argv.length > 0 ? argv[0] : "test.csv";
         System.out.println(String.format("Import the contents of [%s]", file));
         IngestCLI cli = new IngestCLI();
