@@ -106,6 +106,42 @@ local     simpsons_db-volume
 
 This makes it possible to manage different test environments with different project names.
 
+Restart the stack with the simpsons volume
+```
+docker-compose -p simpsons \
+  -f examples/session2/servers-with-volume.yml \
+  up -d
+```
+
+[http://localhost:4567/listing](http://localhost:4567/listing)
+
+```
+docker-compose -p simpsons \
+  -f examples/session2/servers-with-volume.yml \
+  down
+```
+
+Restart the stack with the flanders volume
+
+```
+docker-compose -p flanders \
+  -f examples/session2/servers-with-volume.yml \
+  up -d
+```
+
+[http://localhost:4567/listing](http://localhost:4567/listing)
+
+```
+docker-compose -p flanders \
+  -f examples/session2/servers-with-volume.yml \
+  down
+```
+
+## Remove the volumes
+```
+docker volume rm flanders_db-volume simpsons_db-volume
+```
+
 ## Could I run both stacks at once?
 
 Not without some work.  

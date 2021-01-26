@@ -66,6 +66,9 @@ Output -- Empty
 Create some content within the volume.
 ```
 docker run --rm -it -v "test-example:/data" ubuntu touch /data/test1.txt
+```
+
+```
 docker run --rm -it -v "test-example:/data" ubuntu touch /data/test2.txt
 ```
 

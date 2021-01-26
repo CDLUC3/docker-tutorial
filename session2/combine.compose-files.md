@@ -83,7 +83,7 @@ docker-compose \
 Note that the values have been overridden for HELLO and HOWDY for mydb
 ```
       HELLO: sample message for data-load
-      HELLO: ovverride value for mydb
+      HELLO: override value for mydb
       HOWDY: new value for mydb
       HELLO: sample message for ruby server
 ```

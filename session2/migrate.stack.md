@@ -77,7 +77,7 @@ docker-compose -f examples/session2/docker-compose.yml logs
 
 The stop command will stop the containers defined in the docker-compose file.
 ```
-docker-compose -f examples/session2/docker-compose.yml down
+docker-compose -f examples/session2/docker-compose.yml stop
 ```
 
 ```output
