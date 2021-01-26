@@ -29,4 +29,9 @@ What benefits does orchestration provide?
     - Amazon implementation of containerization resembling other AWS services
     - [Deploy applications on Amazon ECS using Docker Compose](https://aws.amazon.com/blogs/containers/deploy-applications-on-amazon-ecs-using-docker-compose/)
 
+## Preparing for Session 3
+
+- Would folks be open to installing VSCode?
+  - If so, we could do a hands on demonstration of VSCode container features
+
 {% include next.html %}
