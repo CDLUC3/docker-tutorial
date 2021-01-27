@@ -1,0 +1,43 @@
+{
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "docker.commands.composeUp": [
+        {
+            "label": "default",
+            "template": "docker-compose -${configurationFile} up -d"
+        },
+        {
+            "label": "default - rebuild",
+            "template": "docker-compose ${configurationFile} up -d --build"
+        },
+        {
+            "label": "servers-with-volume",
+            "template": "docker-compose -f examples/session2/servers-with-volume.yml up -d"
+        },
+    ],
+    "docker.commands.composeDown": [
+        {
+            "label": "default",
+            "template": "docker-compose ${configurationFile} down"
+        },
+        {
+            "label": "merritt",
+            "template": "docker-compose -p merritt -f examples/session2/servers-with-volume.yml down"
+        },
+    ],
+    "docker.commands.attach": [
+        {
+            "label": "default",
+            "template": "docker exec -it ${containerId} ${shellCommand}"
+        },
+        {
+            "label": "mysql session",
+            "template": "docker exec -it mydb mysql -u user --password=password --database=userdb"
+        },
+    ],
+}
