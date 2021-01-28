@@ -6,14 +6,7 @@ nextpage: container.registries
 {% include nav.html %}
 
 ## Session Preparation 
-The following step is optional but recommended. We will spend a few minutes in Session 3 exploring VSCode Docker features.
-- [Install VSCode](https://code.visualstudio.com/)
-- Open VSCode
-- Click "Open Folder"
-- Open this repository in VSCode
-- Click the "Extensions" button on the ribbon on the left side
-- Install project recommended extensions
-  - _TODO: Capture actual language for this option_
+- [Configure VSCode for Session 3](configure.vscode.md)
 
 ## Session Outline
 - [Container Registries](container.registries.md)
