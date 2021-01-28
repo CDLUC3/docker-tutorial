@@ -16,8 +16,12 @@
             "template": "docker-compose ${configurationFile} up -d --build"
         },
         {
-            "label": "servers-with-volume",
-            "template": "docker-compose -f examples/session2/servers-with-volume.yml up -d"
+            "label": "simpsons stack",
+            "template": "docker-compose -p simpsons -f examples/session2/servers-with-volume.yml up -d"
+        },
+        {
+            "label": "flanders stack",
+            "template": "docker-compose -p flanders -f examples/session2/servers-with-volume.yml up -d"
         },
     ],
     "docker.commands.composeDown": [
@@ -26,8 +30,12 @@
             "template": "docker-compose ${configurationFile} down"
         },
         {
-            "label": "merritt",
-            "template": "docker-compose -p merritt -f examples/session2/servers-with-volume.yml down"
+            "label": "simpsons stack",
+            "template": "docker-compose -p simpsons -f examples/session2/servers-with-volume.yml down"
+        },
+        {
+            "label": "flanders stack",
+            "template": "docker-compose -p flanders -f examples/session2/servers-with-volume.yml down"
         },
     ],
     "docker.commands.attach": [
