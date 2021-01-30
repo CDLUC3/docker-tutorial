@@ -1,0 +1,43 @@
+families:
+  simpsons:
+    - first_name: Homer
+      last_name: Simpson
+      phone: 
+      - 555-111-2222
+      email: 
+      - homer@powerplant
+    - first_name: Marge
+      last_name: Simpson
+      phone: 
+      - 555-111-2222
+      - 555-323-2222
+      email: 
+      - marge@aol.com
+      - marge@yahoo.com
+    - first_name: Bart
+      last_name: Simpson
+      email: 
+      - bart@springfield.edu
+    - first_name: Lisa
+      last_name: Simpson
+      email: 
+      - lisa@springfield.edu
+    - first_name: Maggie
+      last_name: Simpson
+  flanders:
+    - first_name: Ned
+      last_name: Flanders
+      phone: 
+      - 555-333-1111
+      email: 
+      - ned@yahoo.com
+    - first_name: Maude
+      last_name: Flanders
+      phone: 
+      - 555-333-1111
+      email: 
+      - maude@yahoo.com
+    - first_name: Rodd
+      last_name: Flanders
+    - first_name: Todd
+      last_name: Flanders
