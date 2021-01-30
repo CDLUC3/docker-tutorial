@@ -6,4 +6,6 @@ WORKDIR /github/workspace/
 
 ADD . .
 
+RUN ls -l /github/workspace/ && pwd
+
 ENTRYPOINT ["python3", "yaml2csv.py"]
