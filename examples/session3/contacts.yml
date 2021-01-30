@@ -41,3 +41,32 @@ families:
       last_name: Flanders
     - first_name: Todd
       last_name: Flanders
+  bouviers:
+    - first_name: Jacqueline
+      last_name: Bouvier
+      phone: 
+      - 555-444-1111
+      email: 
+      - maude@yahoo.com
+    - first_name: Patty
+      last_name: Bouvier
+      phone: 
+      - 555-444-1111
+      email: 
+      - patty@springfield-dot.com
+    - first_name: Selma
+      last_name: Bouvier
+      phone: 
+      - 555-444-1111
+      email: 
+      - selma@springfield-dot.com
+  unknown:
+    - first_name: Sherri
+      last_name: Unknown
+      email: 
+      - sherri@springfield.edu
+    - first_name: Terri
+      last_name: Unknown
+      email: 
+      - terri@springfield.edu
+

@@ -9,6 +9,6 @@ jobs:
       uses: actions/checkout@v2
     - name: Convert yaml to csv
       id: yaml2csv
-      uses: ./examples/session3/
+      uses: ./examples/session3/docker-action/
       with:
         yaml: ./examples/session3/contacts.yml
