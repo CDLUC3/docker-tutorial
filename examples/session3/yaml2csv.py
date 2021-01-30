@@ -63,5 +63,6 @@ class Person:
 
 
 myConv = MyConverter()
-data = myConv.parseYaml("contacts.yml")
+arg = sys.argv[1] if len(sys.argv) > 1 else 'contacts.yml'
+data = myConv.parseYaml(arg)
 myConv.processContacts(data)

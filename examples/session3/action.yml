@@ -1,0 +1,15 @@
+name: 'YAML to CSV'
+description: 'Prepare CSV Contacts from Yaml'
+inputs:
+  yaml:  # id of input
+    description: 'Yaml file to parse'
+    required: true
+    default: 'contacts.yml'
+outputs:
+  report:
+    description: 'report displaying CSV content'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.yaml }}
