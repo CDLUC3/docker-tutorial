@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  prepare_csv:
+    runs-on: ubuntu-latest
+    name: Prepare input data
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Convert yaml to csv
+      id: yaml2csv
+      uses: ./examples/session3
+      with:
+        yaml: ./examples/session3/contacts.yml
