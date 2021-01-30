@@ -35,8 +35,10 @@ class Family:
 
     def processFamily(self):
         print("\n\tFamily {}\n".format(self.key))
+        f = open("output/{}".format(self.key),"w+")
         for p in self.members:
-            p.printrec(0)
+            p.printrec(f, 0)
+        f.close()
 
 class Person:
     def __init__(self, json):
@@ -50,7 +52,7 @@ class Person:
         m = max(1, m)
         return m
 
-    def printrec(self, i):
+    def printrec(self, f, i):
         rec = "{},{},{},{}".format(
             self.first_name,
             self.last_name,
@@ -58,8 +60,10 @@ class Person:
             self.phone[i] if len(self.phone) > i else ''
         )
         print(rec)
+        f.write(rec)
+        f.write("\n")
         if (i + 1 < self.rec_count()):
-            self.printrec(i+1) 
+            self.printrec(f, i+1) 
 
 
 myConv = MyConverter()

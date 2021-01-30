@@ -6,3 +6,4 @@ examples/session1/java/.settings/org.eclipse.core.resources.prefs
 examples/session1/java/.settings/org.eclipse.jdt.apt.core.prefs
 examples/session1/java/.settings/org.eclipse.jdt.core.prefs
 examples/session1/java/.settings/org.eclipse.m2e.core.prefs
+output/
