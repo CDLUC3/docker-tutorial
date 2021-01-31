@@ -7,8 +7,6 @@ Goals
 - Orchestrating Multiple Docker Containers with Docker Compose
 - Leverage docker technologies from other tools and services
 
-The sessions will start in late Jan 2021.
-
 UC3 staff use MySql, Java, and Ruby, so the sample docker files will use these familiar technologies.
 
 ## Pre Work

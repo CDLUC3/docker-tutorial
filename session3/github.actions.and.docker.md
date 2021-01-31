@@ -56,5 +56,8 @@ The results will be visible on the repository [Actions Tab](https://github.com/C
 - Make a commit to the repository
 - View the results
 
+## Potential uses for UC3
+
+We could add a GitHub action to perform Yaml file validations that must pass before deployment.
 
 {% include next.html %}
