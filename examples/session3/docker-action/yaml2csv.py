@@ -36,8 +36,8 @@ class Family:
     def processFamily(self):
         print("\n\tFamily {}\n".format(self.key))
         fname = "output/{}.txt".format(self.key)
-        f = open(fname, "w+")
         print(os.path.abspath(fname))
+        f = open(fname, "w+")
         for p in self.members:
             p.printrec(f, 0)
         f.close()
