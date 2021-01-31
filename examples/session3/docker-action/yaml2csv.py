@@ -67,7 +67,7 @@ class Person:
         if (i + 1 < self.rec_count()):
             self.printrec(f, i+1) 
 
-os.mkdirs("output")
+os.makedirs("output", exist_ok=True)
 myConv = MyConverter()
 arg = sys.argv[1] if len(sys.argv) > 1 else 'contacts.yml'
 data = myConv.parseYaml(arg)
