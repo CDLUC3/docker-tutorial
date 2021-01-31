@@ -15,13 +15,13 @@ GitHub actions are general purpose and can be written to perform any type of aut
 
 In this example, we would like to generate additional test files that can be utilized in our test docker stack.
 
-We will create a yaml file ([examples/session3/contacts.yml](examples/session3/contacts.yml)) that contains a set of data that we would like to use for testing.
+We will create a yaml file ([examples/session3/contacts.yml](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/examples/session3/contacts.yml)) that contains a set of data that we would like to use for testing.
 
 ## Yaml to CSV Conversion Program
 
 The following python program can be utilized to convert the yaml file into a set of csv files.
 
-- [examples/session3/docker-action/yaml2csv.py](examples/session3/docker-action/yaml2csv.py)
+- [examples/session3/docker-action/yaml2csv.py](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/examples/session3/docker-action/yaml2csv.py)
 
 _If you have python3 and pyyaml installed, you can try running it locally._
 
@@ -42,7 +42,7 @@ docker run --rm -it -v "$(pwd)/examples/session3/contacts.yml:/app/contacts.yml"
 
 [GitHub Actions - Container Actions](https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/creating-a-docker-container-action)
 
-The following [action.yml](examples/session3/action.yml) describes how to run the Docker image as a GitHub action.
+The following [action.yml](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/examples/session3/action.yml) describes how to run the Docker image as a GitHub action.
 
 [.github/workflows/main.yml](.github/workflows/main.yml) defineds a GitHub actiont that will execute this action on any push to the repository.
 
