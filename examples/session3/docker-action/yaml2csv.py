@@ -35,9 +35,10 @@ class Family:
 
     def processFamily(self):
         print("\n\tFamily {}\n".format(self.key))
+        print("#first_name,last_name,email,phone")
         fname = "output/{}.txt".format(self.key)
-        print(os.path.abspath(fname))
         f = open(fname, "w+")
+        f.write("#first_name,last_name,email,phone\n")
         for p in self.members:
             p.printrec(f, 0)
         f.close()
