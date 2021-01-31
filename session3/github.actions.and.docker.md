@@ -55,6 +55,7 @@ The results will be visible on the repository [Actions Tab](https://github.com/C
 - Enable workflows
 - Make a commit to the repository
 - View the results
+- Download the generated assets
 
 ## Potential uses for UC3
 
