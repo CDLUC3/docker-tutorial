@@ -1,0 +1,20 @@
+on: [push]
+
+jobs:
+  prepare_csv:
+    runs-on: ubuntu-latest
+    name: Prepare input data
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Convert yaml to csv
+      id: yaml2csv
+      uses: ./examples/session3/docker-action/
+      with:
+        yaml: ./examples/session3/contacts.yml
+    - name: Archive generated artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist-without-markdown
+        path: |
+          output/*.txt
