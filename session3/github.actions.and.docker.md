@@ -42,9 +42,9 @@ docker run --rm -it -v "$(pwd)/examples/session3/contacts.yml:/app/contacts.yml"
 
 [GitHub Actions - Container Actions](https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/creating-a-docker-container-action)
 
-The following [action.yml](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/action.yml) describes how to run the Docker image as a GitHub action.
+The following [examples/session3/docker-action/action.yml](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/docker-action/action.yml) describes how to run the Docker image as a GitHub action.
 
-[.github/workflows/main.yml](.github/workflows/main.yml) defineds a GitHub actiont that will execute this action on any push to the repository.
+[.github/workflows/main.yml](https://github.com/CDLUC3/docker-tutorial/blob/main/.github/workflows/main.yml) defineds a GitHub actiont that will execute this action on any push to the repository.
 
 The results will be visible on the repository [Actions Tab](https://github.com/CDLUC3/docker-tutorial/actions).
 
