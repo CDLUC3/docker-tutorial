@@ -37,7 +37,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
 
 ### Run a python program
 
-[examples/session3/hello.py](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/examples/session3/hello.py)
+[examples/session3/hello.py](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/hello.py)
 
 Mount a file to pass it to the interpreter
 ```
@@ -74,7 +74,7 @@ irb(main):002:0> exit
 
 ### Run a ruby program
 
-[examples/session3/hello.rb](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/examples/session3/hello.rb)
+[examples/session3/hello.rb](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/hello.rb)
 
 ```
 docker run --rm -it -v "$(pwd)/examples/session3/hello/hello.rb:/tmp/hello.rb" ruby:2.1 ruby /tmp/hello.rb 
@@ -107,7 +107,7 @@ javac 1.8.0_275
 
 ### Compile and run a java program
 
-[examples/session3/hello/Hello.java](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/examples/session3/hello/Hello.java)
+[examples/session3/hello/Hello.java](https://github.com/CDLUC3/docker-tutorial/blob/main/examples/session3/hello/Hello.java)
 
 Compile a program - note that the class file is saved to your local volume mount
 ```
