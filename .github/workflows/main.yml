@@ -21,3 +21,12 @@ jobs:
     - name: Archive generated artifacts
       run: |
         docker-compose -f ./examples/session2/servers.yml up -d
+        sleep 10
+        for file in output/*.txt
+        do 
+          docker-compose \
+            -f examples/session2/servers.yml \
+            -f examples/session3/docker-action-compose/loader.yml \
+            run data-load ${file}
+        end
+        docker-compose -f ./examples/session2/servers.yml down
