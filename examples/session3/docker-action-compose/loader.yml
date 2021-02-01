@@ -9,7 +9,7 @@ services:
     networks:
       mynet:
     volumes:
-    - "./output:/tmp/output"
+    - "../../output:/tmp/generated"
     depends_on:
     - mydb
     stdin_open: true
