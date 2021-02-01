@@ -57,6 +57,76 @@ The results will be visible on the repository [Actions Tab](https://github.com/C
 - View the results
 - Download the generated assets
 
+## Optional Excercise - Run a docker compose stack in GitHub actions
+
+It is also possible to use a docker compose stack within a GitHub actions.
+
+Add the following step to `.github/workflows/main.yml` to test the generated text files.
+
+```yaml
+    - name: Test generated artifacts in docker stack
+      run: |
+        docker-compose -f ./examples/session2/servers.yml up -d
+        sleep 10
+        for file in output/*.txt
+        do 
+          docker-compose \
+            -f examples/session2/servers.yml \
+            -f examples/session3/docker-action-compose/loader.yml \
+            run data-load /tmp/${file}
+        done
+        docker-compose -f ./examples/session2/servers.yml down
+```
+
+Note in the job output that the 4 generated files were successfully processed.
+
+```output
+Creating session2_data-load_run ... 
+
+Creating session2_data-load_run ... done
+Import the contents of [/tmp/output/bouviers.txt]
+    1	Jacqueline	   Bouvier	               maude@yahoo.com	555-444-1111
+    2	     Patty	   Bouvier	     patty@springfield-dot.com	555-444-1111
+    3	     Selma	   Bouvier	     selma@springfield-dot.com	555-444-1111
+Creating session2_data-load_run ... 
+
+Creating session2_data-load_run ... done
+Import the contents of [/tmp/output/flanders.txt]
+    4	       Ned	  Flanders	                 ned@yahoo.com	555-333-1111
+    5	     Maude	  Flanders	               maude@yahoo.com	555-333-1111
+		Email [maude@yahoo.com] already exists for user id 5
+    6	      Rodd	  Flanders	                              	          
+    7	      Todd	  Flanders	                              	          
+Creating session2_data-load_run ... 
+
+Creating session2_data-load_run ... done
+Import the contents of [/tmp/output/simpsons.txt]
+    8	     Homer	   Simpson	              homer@powerplant	555-111-2222
+    9	     Marge	   Simpson	                 marge@aol.com	555-111-2222
+    9	     Marge	   Simpson	               marge@yahoo.com	555-323-2222
+   10	      Bart	   Simpson	          bart@springfield.edu	          
+   11	      Lisa	   Simpson	          lisa@springfield.edu	          
+   12	    Maggie	   Simpson	                              	          
+Creating session2_data-load_run ... 
+
+Creating session2_data-load_run ... done
+Import the contents of [/tmp/output/unknown.txt]
+   13	    Sherri	   Unknown	        sherri@springfield.edu	          
+   14	     Terri	   Unknown	         terri@springfield.edu	          
+Stopping rubyserver ... 
+Stopping mydb       ... 
+
+Stopping rubyserver ... done
+
+Stopping mydb       ... done
+Removing rubyserver ... 
+Removing mydb       ... 
+
+Removing mydb       ... done
+
+Removing rubyserver ... done
+Removing network session2_mynet
+```
 ## Potential uses for UC3
 
 We could add a GitHub action to perform Yaml file validations that must pass before deployment.
