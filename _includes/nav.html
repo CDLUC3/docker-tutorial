@@ -3,7 +3,7 @@
     <span> /</span>
     <a href="{{site.url}}">&#127968; Home</a> 
     <span> / </span>
-    <a href="{{site.url}}{{page.dir}}">{{page.dir | replace: "session", " Session " | replace: "/", "" }}</a>
+    <a href="{{site.url}}{{page.dir | replace: '^/', ''}}">{{page.dir | replace: "session", " Session " | replace: "/", "" }}</a>
     <span> / </span>
     <span class='pagename'>{{page.title | default: page.name}}</span>
 </div>
