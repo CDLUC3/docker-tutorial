@@ -18,3 +18,6 @@ jobs:
         name: dist-without-markdown
         path: |
           output/*.txt
+    - name: Archive generated artifacts
+      run: |
+        docker-compose -f ./examples/session2/servers.yml up -d
