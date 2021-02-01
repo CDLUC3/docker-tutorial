@@ -27,6 +27,6 @@ jobs:
           docker-compose \
             -f examples/session2/servers.yml \
             -f examples/session3/docker-action-compose/loader.yml \
-            run data-load ${file}
+            run data-load /tmp/${file}
         done
         docker-compose -f ./examples/session2/servers.yml down
