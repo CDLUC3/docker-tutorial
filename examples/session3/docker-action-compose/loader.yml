@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  data-load:
+    container_name: data-load
+    image: my-java
+    build:
+      context: ../session1/java
+      dockerfile: Dockerfile
+    networks:
+      mynet:
+    volumes:
+    - "../../output:/tmp/output"
+    depends_on:
+    - mydb
+    stdin_open: true
+    tty: true
