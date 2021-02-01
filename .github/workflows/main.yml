@@ -18,7 +18,7 @@ jobs:
         name: dist-without-markdown
         path: |
           output/*.txt
-    - name: Archive generated artifacts
+    - name: Test generated artifacts in docker stack
       run: |
         docker-compose -f ./examples/session2/servers.yml up -d
         sleep 10
@@ -28,5 +28,5 @@ jobs:
             -f examples/session2/servers.yml \
             -f examples/session3/docker-action-compose/loader.yml \
             run data-load ${file}
-        end
+        done
         docker-compose -f ./examples/session2/servers.yml down
