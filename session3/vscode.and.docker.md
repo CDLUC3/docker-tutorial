@@ -45,12 +45,14 @@ These panels provide an intuitive GUI for browsing your docker assets.
   - Select "Attach Shell"
   - Select "mysql session" from the popup box
   - Enter `show tables;` in the SQL terminal window
+  - Enter `exit` to close the SQL session
 - Right Click the "myrbuy" container
   - Select "default"
   - Enter `gem list` in the container terminal window
+  - Enter `exit` to close the terminal session
 - Right Click the "myrbuy" container
   - Select "Attach Visual Studio Code"
-  - A new window will
+  - A new window will open
   - Click the Explorer button in the new window
   - Open the folder "/apps"
   - From the menu bar, select "New Terminal"

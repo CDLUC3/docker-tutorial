@@ -7,4 +7,4 @@ examples/session1/java/.settings/org.eclipse.jdt.apt.core.prefs
 examples/session1/java/.settings/org.eclipse.jdt.core.prefs
 examples/session1/java/.settings/org.eclipse.m2e.core.prefs
 output/
-examples/session3/hello/java/Hello.class
+examples/session3/hello/java/*.class
