@@ -1,4 +1,5 @@
 .DS_Store
+.venv/
 examples/session1/java/target
 examples/session1/java/.classpath
 examples/session1/java/.project

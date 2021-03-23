@@ -11,8 +11,9 @@ ENV MYSQL_DATABASE=userdb
 COPY init.sql /docker-entrypoint-initdb.d/start.sql
 
 # Set the timezone base on our target audience
-ENV TZ=America/Los_Angeles
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+# Mar 2021 - the following is no longer working
+# ENV TZ=America/Los_Angeles
+# RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Expose port 3306 to make the database accessible to other docker containers
 EXPOSE 3306 33060
