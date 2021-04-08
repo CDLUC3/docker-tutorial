@@ -53,7 +53,7 @@ docker exec -it mydb mysql --version
 mysql  Ver 14.14 Distrib 5.7.31, for Linux (x86_64) using  EditLine wrapper
 ```
 
-## Connect to contailer using mysql cli _within_ the container
+## Connect to container using mysql cli _within_ the container
 
 ```
 docker exec -it mydb mysql -uroot --password=password -e "select 1, user(), now()"
