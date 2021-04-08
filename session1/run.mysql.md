@@ -147,7 +147,7 @@ RUN echo "woof" > dog.txt && \
 
 The following reference information was used to assemble the Dockerfile that will be used in this lesson.
 
-[MySql Docker Image Referece](https://hub.docker.com/_/mysql)
+[MySql Docker Image Reference](https://hub.docker.com/_/mysql)
 
 In particular, check the following
 - Environment Variables
