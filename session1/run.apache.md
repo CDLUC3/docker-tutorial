@@ -145,8 +145,6 @@ docker run --rm --name apache -d -p 9999:80 httpd
 
 From a browser: [http://localhost:9999](http://localhost:9999) 
 
-_If you already have a web server running on your machine, you will need to stop that web server or skip the next couple steps._
-
 With curl:
 ```
 curl "http://localhost:9999"
