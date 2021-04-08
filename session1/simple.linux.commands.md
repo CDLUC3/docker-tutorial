@@ -61,7 +61,7 @@ root@91abfa3e77ba:/# exit
 When you wish to network your containers, you can assign names (`--name name`) to the containers to make them easy to locate.  The `-d` option indicates that the container should be run in the background.
 
 ```
-docker run -it --rm --name mycontainer -d ubuntu 
+docker run -it --name mycontainer -d ubuntu 
 ```
 
 The *docker ps* command can be used to see your running containers.
