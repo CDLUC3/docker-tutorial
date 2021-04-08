@@ -6,6 +6,8 @@ nextpage: run.java
 {% include nav.html %}
 
 ## Start a MySql container in docker
+
+_The `-e` parameter sets an environment variable within the container._
 ```
 docker run --rm --name mydb -e MYSQL_ROOT_PASSWORD=password -d mysql
 ```
