@@ -170,7 +170,7 @@ From the root directory of the tutorial, run the following
 docker build -t my-mysql examples/session1/mysql
 ```
 
-You will see the following output.  Note that the build contains 10 steps.  
+You will see the following output.  Note that the build contains 7 steps.  
 
 These are the layers added to the dockerfile.
 ```output
