@@ -7,7 +7,7 @@ nextpage: run.ruby
 
 In this exercise, we will write a java container that will insert data into the MySql container.
 
-## Create a Docker Netowrk
+## Create a Docker Network
 In order for the java container to find the mysql container they will both need to be run in the same docker network.  
 ```
 docker network create mynet
