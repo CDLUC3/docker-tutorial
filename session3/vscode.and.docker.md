@@ -54,7 +54,7 @@ These panels provide an intuitive GUI for browsing your docker assets.
   - Select "Attach Visual Studio Code"
   - A new window will open
   - Click the Explorer button in the new window
-  - Open the folder "/apps"
+  - Open the folder "/app"
   - From the menu bar, select "New Terminal"
   - Enter `gem list` in the terminal
 
