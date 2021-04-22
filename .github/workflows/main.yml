@@ -18,3 +18,15 @@ jobs:
         name: dist-without-markdown
         path: |
           output/*.txt
+    - name: Test generated artifacts in docker stack
+      run: |
+        docker-compose -f ./examples/session2/servers.yml up -d
+        sleep 10
+        for file in output/*.txt
+        do 
+          docker-compose \
+            -f examples/session2/servers.yml \
+            -f examples/session3/docker-action-compose/loader.yml \
+            run data-load /tmp/${file}
+        done
+        docker-compose -f ./examples/session2/servers.yml down
