@@ -10,6 +10,5 @@ nextpage: container.registries
 - [Running Docker on a server](running.docker.on.a.server.md)
 - [VSCode and Docker](vscode.and.docker.md)
   - [Configure VSCode for Docker](configure.vscode.md)
-- [GitHub Actions and Docker](github.actions.and.docker.md)
 
 {% include next.html %}
