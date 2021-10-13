@@ -34,6 +34,13 @@ exit
 docker-compose version
 ```
 
+Recently, Docker desktop added support for the compose command.  For Docker Desktop users, the following command should also work.
+
+```
+docker compose version
+```
+
+
 ## Verify git version
 
 ```

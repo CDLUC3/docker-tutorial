@@ -16,9 +16,6 @@ Note: Registries contain repositories.
 - [Amazon ECR](https://aws.amazon.com/ecr/)
   - [Public Registry](https://gallery.ecr.aws/)
   - An ECR **Private Registry** is used to make your code available
-    - To Lambda (for Docker Deployment)
-    - To ECR
-    - To other AWS services?
 - [GitHub Container Registry](https://docs.github.com/en/free-pro-team@latest/packages/guides/about-github-container-registry)
 
 ## Docker Commands for working with Registries
