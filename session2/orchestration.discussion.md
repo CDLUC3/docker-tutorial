@@ -16,8 +16,8 @@ What benefits does orchestration provide?
 - Service discovery (without awareness of the number of nodes running)
 
 ## Orchestration Options
+_These details may be out of date.  I have not explored these options in a while._
   - [Docker Swarm](https://docs.docker.com/engine/swarm/) 
-    - Fyi, used at UCB library
     - This is a paid service of Docker
     - At one time, Swarm was going to be deprecated.  It may have been un-deprecated at some time in 2020.
   - [Kubernetes](https://kubernetes.io/)
@@ -28,10 +28,5 @@ What benefits does orchestration provide?
   - [Amazon ECS](https://aws.amazon.com/ecs/) 
     - Amazon implementation of containerization resembling other AWS services
     - [Deploy applications on Amazon ECS using Docker Compose](https://aws.amazon.com/blogs/containers/deploy-applications-on-amazon-ecs-using-docker-compose/)
-
-## Preparing for Session 3
-
-- Would folks be open to installing VSCode?
-  - If so, we could do a hands on demonstration of VSCode container features
 
 {% include next.html %}

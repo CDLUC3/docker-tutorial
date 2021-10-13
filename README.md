@@ -23,7 +23,7 @@ Hands-on orchestration with docker-compose.  Discussion of other orchestration o
 [Session 2](session2/)
 
 ## Part 3: Using Docker in common tools
-Using Docker Containters in existing tools and services
+Using Docker Containters in existing tools and services (time permitting)
 
 [Session 3](session3/)
 
