@@ -6,7 +6,7 @@ nextpage: simple.linux.commands
 
 Numerous **Docker images** have been created and published to make it possible to run applications with Docker.
 
-[DockerHub](https://hub.docker.com/) is registry of published images.  DockerHub provides search interface to find Docker images.
+[DockerHub](https://hub.docker.com/) is registry of published images.  DockerHub provides a search interface to find Docker images.
 - [Search for Tomcat](https://hub.docker.com/search?q=tomcat&type=image)
 - [Search for Apache](https://hub.docker.com/search?q=apache&type=image)
 - [Search for Ruby](https://hub.docker.com/search?q=ruby&type=image)

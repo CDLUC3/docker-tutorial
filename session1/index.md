@@ -5,6 +5,12 @@ nextpage: search.dockerhub
 
 {% include nav.html %}
 
+## What can I do with Docker?
+
+Docker allows you to run many different applications, operating system shells, and programming language environments from your computure.  This is done by locating a *Docker Image* of interest to you and running that image as a *Docker Container*.
+
+## Sample Docker Images to Get Started
+
 - [Finding a Docker Image](search.dockerhub.md)
 - [Run Simple Linux Commands](simple.linux.commands.md)
 - [Run Apache in Docker](run.apache.md)

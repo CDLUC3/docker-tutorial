@@ -54,7 +54,7 @@ Using Docker Containters in existing tools and services (time permitting)
 
 ## Follow Up
 
-If you have follow up questions, reach out to me on UCTech Slack: `@Terry Brady (UCOP-CDL)` 
+If you have follow up questions, reach out to me on UCTech Slack: `@Terry Brady (UCOP-CDL)`. 
 
 ---
 ## Notes
