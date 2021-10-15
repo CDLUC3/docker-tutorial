@@ -50,5 +50,12 @@ Using Docker Containters in existing tools and services (time permitting)
 ## Resources - Links
 [Resources](resources/)
 
+---
+
+## Follow Up
+
+If you have follow up questions, reach out to me on UCTech Slack: `@Terry Brady (UCOP-CDL)` 
+
+---
 ## Notes
 _This site reuses content from https://dspace-labs.github.io/DSpace-Docker-Images/documentation/workshop/info.html_
