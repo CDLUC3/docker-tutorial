@@ -4,9 +4,9 @@
 
 Tutorial materials are available at the following URL:
 
-https://cdluc3.github.io/docker-tutorial/
+[https://cdluc3.github.io/docker-tutorial/](https://cdluc3.github.io/docker-tutorial/)
 
-The workshop is designed to be interactive.  If you have not already done so, please complete the Pre Work section below.
+_The workshop is designed to be interactive.  If you are interested in following along with the sample excercises, please make sure you have completed the Pre Work section below._
 
 ## Quick Introduction
 _This will either be done via chat or audio depending on the number of attendees._
