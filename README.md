@@ -1,5 +1,5 @@
-# Docker Tutorial for UC3 Developers
-This will consist of three 90 minute sessions covering various topics in the use of Docker.  
+# Docker Tutorial for the UC Libraries Forum
+This tutorial will cover various topics related to the use of Docker.  
 
 Goals
 - Understainging Docker Images and Docker Containers
@@ -7,23 +7,23 @@ Goals
 - Orchestrating Multiple Docker Containers with Docker Compose
 - Leverage docker technologies from other tools and services
 
-UC3 staff use MySql, Java, and Ruby, so the sample docker files will use these familiar technologies.
+Code examples will be based on MySql, Java, and Ruby with the hope that some or all of these technologies will be familiar to participants.
 
 ## Pre Work
 [Pre Work - Installations](prework/)
 
-## Session 1: Docker Images and Containers - Using the docker command
+## Part 1: Docker Images and Containers - Using the docker command
 Execute code using the docker command.  Use docker command line ags.
 
 [Session 1](session1/)
 
-## Session 2: Orchestration with the docker-compose command
+## Part 2: Orchestration with the docker-compose command
 Hands-on orchestration with docker-compose.  Discussion of other orchestration options.
 
 [Session 2](session2/)
 
-## Session 3: Using Docker in common tools
-Using Docker Containters in existing tools and services
+## Part 3: Using Docker in common tools
+Using Docker Containters in existing tools and services (time permitting)
 
 [Session 3](session3/)
 

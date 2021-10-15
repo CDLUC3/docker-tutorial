@@ -11,7 +11,6 @@ nextpage: migrate.stack
 - [Re-create Docker Containers - What Persists?](what.persists.md)
 - [Persist Content with Docker Volumes](docker.volumes.md)
 - [Docker Compose Project Configurations (-p)](project.configurations.md)
-- [UC3 Orchestration Examples](uc3.orchestration.examples.md)
 - [Container Orchestration Discussion](orchestration.discussion.md)
 
 {% include next.html %}
