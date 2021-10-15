@@ -8,12 +8,15 @@ Tutorial materials are available at the following URL:
 
 _The workshop is designed to be interactive.  If you are interested in following along with the sample excercises, please make sure you have completed the Pre Work section below._
 
+---
+
 ## Quick Introduction
 _This will either be done via chat or audio depending on the number of attendees._
 - What is your name?
 - What is your role?
 - What is your experience with Docker?
 
+---
 ## Goals
 This tutorial will cover various topics related to the use of Docker.  
 
@@ -25,6 +28,7 @@ Goals
 
 Code examples will be based on MySql, Java, and Ruby with the hope that some or all of these technologies will be familiar to participants.
 
+---
 ## Pre Work
 [Pre Work - Installations](prework/)
 
