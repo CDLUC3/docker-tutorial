@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
-title: Docker tutorial for UC3 Staff
-description: "Docker tutorial for UC3 Staff"
+title: Docker tutorial for the UC Libraries Forum
+description: "Docker tutorial for the UC Libraries Forum"
 baseurl: "/docker-tutorial"
 url: "https://cdluc3.github.io/docker-tutorial/"
 show_downloads: false

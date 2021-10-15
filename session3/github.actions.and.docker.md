@@ -1,6 +1,6 @@
 ---
 title: "GitHub Actions and Docker"
-nextpage: package.lambda.with.docker
+nextpage: ../resources
 ---
 
 {% include nav.html %}
