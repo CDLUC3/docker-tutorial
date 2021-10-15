@@ -1,4 +1,20 @@
 # Docker Tutorial for the UC Libraries Forum
+
+## Welcome!
+
+Tutorial materials are available at the following URL:
+
+https://cdluc3.github.io/docker-tutorial/
+
+The workshop is designed to be interactive.  If you have not already done so, please complete the Pre Work section below.
+
+## Quick Introduction
+_This will either be done via chat or audio depending on the number of attendees._
+- What is your name?
+- What is your role?
+- What is your experience with Docker?
+
+## Goals
 This tutorial will cover various topics related to the use of Docker.  
 
 Goals
