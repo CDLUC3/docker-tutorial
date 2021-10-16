@@ -5,6 +5,8 @@ nextpage: run.mysql
 
 {% include nav.html %}
 
+Apache is a popular web server application.
+
 An [Apache docker image](https://hub.docker.com/_/httpd) is published on Docker Hub.
 
 The following command will start apache.  

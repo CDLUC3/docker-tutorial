@@ -7,7 +7,9 @@ nextpage: run.apache
 
 When a docker image is **run**, it becomes a **docker container**.  
 
-Containers can be started, stopped, and deleted using the **docker** command.
+Docker containers can be *started*, *stopped*, *restarted*, and *removed*. In this exercise we will note what happens to a container during each of these phases.
+
+Containers can be started, stopped, and removed using the **docker** command.
 
 ## Docker Command
 [docker command line reference](https://docs.docker.com/engine/reference/commandline/docker/)

@@ -39,7 +39,7 @@ docker stop mydb
 ```
 
 ## Run a different version of mysql
-[Available MySql Tags on GitHub](https://hub.docker.com/_/mysql?tab=tags&page=1&ordering=last_updated)
+[Available MySql Tags on DockerHub](https://hub.docker.com/_/mysql?tab=tags&page=1&ordering=last_updated)
 
 Start MySql 5.7 using a tagged version of the MySql Image
 ```
