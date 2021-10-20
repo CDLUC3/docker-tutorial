@@ -9,7 +9,7 @@ In the prior example, we had 2 components that ran as servers: MySql and the Rub
 
 The Java Data Load program is an initialization task.
 
-Our stack would be more flexible if we were to break separate these into 2 different components.
+Our stack would be more flexible if we were separate these components into 2 different files.
 
 ## Component Files
 

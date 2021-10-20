@@ -5,7 +5,7 @@ nextpage: run.ruby
 
 {% include nav.html %}
 
-In this exercise, we will write a java container that will insert data into the MySql container.
+In this exercise, we will create a java container that will insert data into a MySql container.
 
 ## Create a Docker Network
 In order for the java container to find the mysql container they will both need to be run in the same docker network.  

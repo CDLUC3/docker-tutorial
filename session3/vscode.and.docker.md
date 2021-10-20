@@ -50,7 +50,7 @@ These panels provide an intuitive GUI for browsing your docker assets.
   - Select "default"
   - Enter `gem list` in the container terminal window
   - Enter `exit` to close the terminal session
-- Right Click the "myrbuy" container
+- Right Click the "myruby" container
   - Select "Attach Visual Studio Code"
   - A new window will open
   - Click the Explorer button in the new window

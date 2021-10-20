@@ -57,6 +57,10 @@ NETWORK ID     NAME                         DRIVER    SCOPE
 c52974406014   session2_mynet               bridge    local
 ```
 
+## Open a web page for the application
+
+- [Sample Ruby App](http://localhost:4567)
+
 ## View Log Files
 
 View a single log file

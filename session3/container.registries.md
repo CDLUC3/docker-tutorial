@@ -22,10 +22,10 @@ Note: Registries contain repositories.
 - docker login
   - log into a registry (dockerhub is the default)
 - docker pull
-  - pull and image from a repository
+  - pulls an image from a repository
   - login is required to pull from a private repository
 - docker push
-  - push and image to a repository (login is required)
+  - pushes an image to a repository (login is required)
 
 
 
