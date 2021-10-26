@@ -27,7 +27,7 @@ Creating rubyserver ... done
 Import the simpsons.csv file
 ```
 docker-compose -p simpsons \
-  -f examples/session2/servers.yml \
+  -f examples/session2/servers-with-volume.yml \
   -f examples/session2/loader.yml \
   run data-load simpsons.csv
 ```
@@ -68,7 +68,7 @@ Creating rubyserver ... done
 Import the flanders.csv file
 ```
 docker-compose -p flanders \
-  -f examples/session2/servers.yml \
+  -f examples/session2/servers-with-volume.yml \
   -f examples/session2/loader.yml \
   run data-load flanders.csv
 ```
