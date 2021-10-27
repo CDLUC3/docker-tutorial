@@ -30,4 +30,8 @@ COPY --from=build /tmp/appdir/*.jar /tmp/
 # The maven build bundles all dependency names into the manifest of the generated jar file.
 # Run "ls /tmp" to see the set of runtime jars that are included.
 
-ENTRYPOINT [ "java", "-jar", "IngestDemo-1.0.jar" ] 
+# The following stopped working...
+# ENTRYPOINT [ "java", "-jar", "IngestDemo-1.0.jar" ] 
+
+# Set classpath explicitly
+ENTRYPOINT [ "java", "-cp", "mysql-connector-java-8.0.22.jar:IngestDemo-1.0.jar", "org.cdluc3.IngestCLI" ] 
